@@ -105,10 +105,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Plumber",
-          "@id": "https://visosoplumbing.com/#business",
+          "@id": "https://www.visosoplomeriaeconomica.com/#business",
           name: BUSINESS.name,
           alternateName: BUSINESS.altName,
-          image: "https://visosoplumbing.com/favicon.ico",
+          image: "https://www.visosoplomeriaeconomica.com/favicon.ico",
           telephone: BUSINESS.phoneDisplay,
           priceRange: "$$",
           address: {

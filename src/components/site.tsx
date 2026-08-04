@@ -17,18 +17,7 @@ export function CallBtn({ label = "Call Now", className = "" }: { label?: string
   );
 }
 
-export function WhatsAppBtn({ label = "WhatsApp Us", className = "" }: { label?: string; className?: string }) {
-  return (
-    <a
-      href={BUSINESS.whatsapp}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={`inline-flex items-center justify-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-bold text-foreground transition-colors hover:bg-secondary ${className}`}
-    >
-      <MessageCircle className="h-4 w-4" /> {label}
-    </a>
-  );
-}
+
 
 export function Reveal({ children, delay = 0 }: { children: ReactNode; delay?: number }) {
   return (
@@ -202,9 +191,8 @@ export function Navbar() {
                 {i.label}
               </Link>
             ))}
-            <div className="mt-2 grid grid-cols-2 gap-2">
+            <div className="mt-2 grid grid-cols-1 gap-2">
               <CallBtn />
-              <WhatsAppBtn label="WhatsApp" />
             </div>
           </div>
         </div>
@@ -218,15 +206,6 @@ export function StickyCTA() {
     <>
       <div className="fixed bottom-6 right-6 z-40 hidden flex-col gap-3 md:flex">
         <a
-          href={BUSINESS.whatsapp}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Chat on WhatsApp"
-          className="grid h-14 w-14 place-items-center rounded-full bg-success text-white shadow-lift transition-transform hover:scale-110"
-        >
-          <MessageCircle className="h-6 w-6" />
-        </a>
-        <a
           href={BUSINESS.phoneHref}
           aria-label="Call Visoso Plumbing"
           className="grid h-14 w-14 place-items-center rounded-full bg-gradient-accent text-accent-foreground shadow-accent transition-transform hover:scale-110"
@@ -235,20 +214,12 @@ export function StickyCTA() {
         </a>
       </div>
 
-      <div className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-2 gap-2 border-t border-border bg-background/95 p-3 backdrop-blur-xl md:hidden">
+      <div className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-1 gap-2 border-t border-border bg-background/95 p-3 backdrop-blur-xl md:hidden">
         <a
           href={BUSINESS.phoneHref}
           className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-accent px-4 py-3 text-sm font-bold text-accent-foreground"
         >
           <Phone className="h-4 w-4" /> Call Now
-        </a>
-        <a
-          href={BUSINESS.whatsapp}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center justify-center gap-2 rounded-full bg-success px-4 py-3 text-sm font-bold text-white"
-        >
-          <MessageCircle className="h-4 w-4" /> WhatsApp
         </a>
       </div>
     </>
@@ -283,7 +254,7 @@ export function TrustBar() {
 
 export function FinalCTA({
   title = "Need A Plumber In Anaheim Right Now?",
-  body = "Call for immediate dispatch or send a WhatsApp message with photos of the problem for a fast free estimate.",
+  body = "Call for immediate dispatch with details of the problem for a fast free estimate.",
 }: {
   title?: string;
   body?: string;
@@ -300,14 +271,6 @@ export function FinalCTA({
             <p className="mt-4 text-base opacity-85">{body}</p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <CallBtn label={`Call ${BUSINESS.phoneDisplay}`} />
-              <a
-                href={BUSINESS.whatsapp}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-full glass-panel px-6 py-3 text-sm font-bold text-ink-foreground transition-colors hover:bg-white/20"
-              >
-                <MessageCircle className="h-4 w-4" /> WhatsApp A Plumber
-              </a>
             </div>
             <p className="mt-6 text-xs uppercase tracking-[0.2em] opacity-70">{fullAddress}</p>
           </div>

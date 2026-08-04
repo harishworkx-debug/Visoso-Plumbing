@@ -93,7 +93,7 @@ export function ServiceCard({ service, locationSlug = "anaheim" }: { service: Se
         <h3 className="font-display text-lg font-bold">{service.name}</h3>
         <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{service.short}</p>
         <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-primary">
-          Learn more <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+          {service.name} <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
         </span>
       </div>
     </Link>

@@ -3,7 +3,7 @@ import { ArrowRight, CheckCircle2, MapPin, PhoneCall, ShieldCheck, Wrench } from
 import heroImage from "@/assets/hero-main.jpg";
 import teamImage from "@/assets/cta-team.jpg";
 import { PageHero, ServiceCard, StatGrid } from "@/components/blocks";
-import { CallBtn, Eyebrow, FAQBlock, FinalCTA, Reveal, Section, TrustBar, WhatsAppBtn } from "@/components/site";
+import { CallBtn, Eyebrow, FAQBlock, FinalCTA, Reveal, Section, TrustBar } from "@/components/site";
 import { BUSINESS } from "@/data/business";
 import { FEATURED_SERVICES } from "@/data/services";
 import { LOCATIONS } from "@/data/locations";
@@ -21,7 +21,7 @@ export const Route = createFileRoute("/")({
 
 const homeFaqs = [
   { q: "Are you available for plumbing emergencies at night?", a: "Yes. We answer emergency calls 24 hours a day, seven days a week, including weekends and holidays." },
-  { q: "Do you provide free plumbing estimates?", a: "Yes. We explain the diagnosis and provide clear, upfront pricing before approved work begins. You can also send photos through WhatsApp." },
+  { q: "Do you provide free plumbing estimates?", a: "Yes. We explain the diagnosis and provide clear, upfront pricing before approved work begins." },
   { q: "Which areas do you serve?", a: "We are based in West Anaheim and serve Anaheim, Orange, Santa Ana, Fullerton, Garden Grove, Buena Park, Placentia, Yorba Linda and nearby communities." },
   { q: "Do your plumbers speak Spanish?", a: "Yes. Our bilingual team provides service in English and Spanish so every recommendation and price is easy to understand." },
 ];
@@ -29,14 +29,14 @@ const homeFaqs = [
 function HomePage() {
   return <>
     <PageHero eyebrow="Anaheim's 24 Hour Plumbing Team" title="Plumbing Fixed Right. Day Or Night." sub="Fast, honest residential and commercial plumbing across Anaheim and Orange County. Licensed technicians, upfront pricing, bilingual service and real 24/7 emergency dispatch." image={heroImage} imageAlt="Visoso Plumbing technician repairing plumbing in an Anaheim home" priority>
-      <CallBtn label={`Call ${BUSINESS.phoneDisplay}`} /><WhatsAppBtn label="Get A Free Estimate" className="glass-panel border-white/20 bg-transparent text-ink-foreground hover:bg-white/15" />
+      <CallBtn label={`Call ${BUSINESS.phoneDisplay}`} />
     </PageHero>
     <Section className="!py-10"><TrustBar /></Section>
     <Section className="bg-surface"><div className="mx-auto max-w-3xl text-center"><Eyebrow>Complete Plumbing Care</Eyebrow><h2 className="mt-5 text-3xl font-extrabold md:text-5xl">One Local Team For Every Plumbing Problem</h2><p className="mt-4 text-muted-foreground">From a dripping faucet to a failed sewer line, our stocked trucks and experienced technicians are prepared to diagnose the cause and complete a lasting repair.</p></div><div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">{FEATURED_SERVICES.slice(0, 6).map(service => <ServiceCard key={service.slug} service={service} />)}</div><div className="mt-10 text-center"><Link to="/services" className="inline-flex items-center gap-2 font-bold text-primary">View all plumbing services <ArrowRight className="h-4 w-4" /></Link></div></Section>
     <Section><div className="grid items-center gap-12 lg:grid-cols-2"><Reveal><img src={teamImage} alt="Visoso Plumbing team ready for an Anaheim service call" width={1400} height={900} loading="lazy" className="aspect-[4/3] w-full rounded-3xl object-cover shadow-lift" /></Reveal><Reveal delay={0.08}><Eyebrow>Why Anaheim Calls Visoso</Eyebrow><h2 className="mt-5 text-3xl font-extrabold md:text-5xl">Straight Answers. Careful Work. No Surprise Bill.</h2><p className="mt-5 leading-relaxed text-muted-foreground">We arrive within a realistic service window, protect your floors and finishes, show you what failed, and quote the work before touching the system.</p><p className="mt-4 leading-relaxed text-muted-foreground">Because we are based in Anaheim, we understand local housing: aging galvanized pipe, slab leaks, root intrusion and hard-water scale.</p><ul className="mt-7 grid gap-3 sm:grid-cols-2">{["Upfront flat-rate pricing", "24/7 live emergency response", "English and Spanish service", "Clean, stocked service trucks", "Residential and commercial", "Workmanship warranty"].map(item => <li key={item} className="flex items-center gap-2 text-sm font-semibold"><CheckCircle2 className="h-5 w-5 text-accent" />{item}</li>)}</ul><div className="mt-8"><CallBtn label="Schedule A Plumber" /></div></Reveal></div></Section>
     <Section className="surface-ink"><StatGrid items={[{ value: "24/7", label: "Emergency Availability" }, { value: "4.9★", label: "Local Customer Rating" }, { value: "10+", label: "Orange County Areas" }, { value: "2", label: "Languages Spoken" }]} /></Section>
     <Section><div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]"><div><Eyebrow>How Service Works</Eyebrow><h2 className="mt-5 text-3xl font-extrabold md:text-4xl">From First Call To Final Test</h2><p className="mt-4 text-muted-foreground">Our process is built around accurate diagnosis, informed approval and verified results.</p></div><div className="grid gap-4 sm:grid-cols-2">{[
-      { icon: PhoneCall, title: "Tell us what happened", body: "Call or WhatsApp photos. We triage the issue and give you a real arrival window." },
+      { icon: PhoneCall, title: "Tell us what happened", body: "Call us with the issue. We triage the issue and give you a real arrival window." },
       { icon: Wrench, title: "We diagnose the cause", body: "A licensed technician tests the system instead of guessing from symptoms." },
       { icon: ShieldCheck, title: "Approve a clear price", body: "You see repair options and a flat-rate quote before work begins." },
       { icon: CheckCircle2, title: "Repair, test and clean", body: "We verify the result, clean the workspace and explain the warranty." },
