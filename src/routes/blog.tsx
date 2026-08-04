@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { BlogPage } from "@/components/content-pages";
+export const Route = createFileRoute("/blog")({ head: () => ({ meta: [{ title: "Anaheim Plumbing Tips & Guides | Visoso" }, { name: "description", content: "Read practical plumbing maintenance, safety and repair guides written for Anaheim and Orange County property owners." }, { property: "og:title", content: "Anaheim Plumbing Tips & Guides | Visoso" }, { property: "og:description", content: "Local expert guidance for drains, leaks, water heaters, sewers and plumbing emergencies." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: BlogPage });

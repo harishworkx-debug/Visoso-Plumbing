@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { LegalPage } from "@/components/content-pages";
+export const Route = createFileRoute("/terms")({ head: () => ({ meta: [{ title: "Terms of Service | Visoso Plumbing" }, { name: "description", content: "Service terms for Visoso Plumbing appointments, estimates and workmanship." }, { property: "og:title", content: "Terms of Service | Visoso Plumbing" }, { property: "og:description", content: "Visoso Plumbing service terms and conditions." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }), component: () => <LegalPage title="Terms of Service" kind="terms" /> });

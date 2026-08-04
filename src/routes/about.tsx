@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { AboutPage } from "@/components/content-pages";
+export const Route = createFileRoute("/about")({ head: () => ({ meta: [{ title: "About Visoso Plumbing | Anaheim CA" }, { name: "description", content: "Meet the local bilingual plumbing team serving Anaheim and Orange County with 24-hour emergency availability." }, { property: "og:title", content: "About Visoso Plumbing | Anaheim CA" }, { property: "og:description", content: "Local, bilingual plumbing built around careful diagnosis and honest service." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: AboutPage });
