@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { LegalPage } from "@/components/content-pages";
+export const Route = createFileRoute("/privacy-policy")({ head: () => ({ meta: [{ title: "Privacy Policy | Visoso Plumbing" }, { name: "description", content: "Privacy policy for Visoso Plumbing customers and website visitors." }, { property: "og:title", content: "Privacy Policy | Visoso Plumbing" }, { property: "og:description", content: "How Visoso Plumbing handles customer information." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }), component: () => <LegalPage title="Privacy Policy" kind="privacy" /> });
