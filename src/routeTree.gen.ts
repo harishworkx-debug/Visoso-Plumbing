@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as SlugRouteImport } from './routes/$slug'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as ContactRouteImport } from './routes/contact'
@@ -18,10 +19,16 @@ import { Route as ReviewsRouteImport } from './routes/reviews'
 import { Route as ServiceAreasRouteImport } from './routes/service-areas'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as TermsRouteImport } from './routes/terms'
+import { Route as BlogPostSlugRouteImport } from './routes/blog.$postSlug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SlugRoute = SlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -64,45 +71,57 @@ const TermsRoute = TermsRouteImport.update({
   path: '/terms',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogPostSlugRoute = BlogPostSlugRouteImport.update({
+  id: '/$postSlug',
+  path: '/$postSlug',
+  getParentRoute: () => BlogRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/$slug': typeof SlugRoute
   '/about': typeof AboutRoute
-  '/blog': typeof BlogRoute
+  '/blog': typeof BlogRouteWithChildren
   '/contact': typeof ContactRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/reviews': typeof ReviewsRoute
   '/service-areas': typeof ServiceAreasRoute
   '/services': typeof ServicesRoute
   '/terms': typeof TermsRoute
+  '/blog/$postSlug': typeof BlogPostSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/$slug': typeof SlugRoute
   '/about': typeof AboutRoute
-  '/blog': typeof BlogRoute
+  '/blog': typeof BlogRouteWithChildren
   '/contact': typeof ContactRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/reviews': typeof ReviewsRoute
   '/service-areas': typeof ServiceAreasRoute
   '/services': typeof ServicesRoute
   '/terms': typeof TermsRoute
+  '/blog/$postSlug': typeof BlogPostSlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/$slug': typeof SlugRoute
   '/about': typeof AboutRoute
-  '/blog': typeof BlogRoute
+  '/blog': typeof BlogRouteWithChildren
   '/contact': typeof ContactRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/reviews': typeof ReviewsRoute
   '/service-areas': typeof ServiceAreasRoute
   '/services': typeof ServicesRoute
   '/terms': typeof TermsRoute
+  '/blog/$postSlug': typeof BlogPostSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/$slug'
     | '/about'
     | '/blog'
     | '/contact'
@@ -111,9 +130,11 @@ export interface FileRouteTypes {
     | '/service-areas'
     | '/services'
     | '/terms'
+    | '/blog/$postSlug'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/$slug'
     | '/about'
     | '/blog'
     | '/contact'
@@ -122,9 +143,11 @@ export interface FileRouteTypes {
     | '/service-areas'
     | '/services'
     | '/terms'
+    | '/blog/$postSlug'
   id:
     | '__root__'
     | '/'
+    | '/$slug'
     | '/about'
     | '/blog'
     | '/contact'
@@ -133,12 +156,14 @@ export interface FileRouteTypes {
     | '/service-areas'
     | '/services'
     | '/terms'
+    | '/blog/$postSlug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  SlugRoute: typeof SlugRoute
   AboutRoute: typeof AboutRoute
-  BlogRoute: typeof BlogRoute
+  BlogRoute: typeof BlogRouteWithChildren
   ContactRoute: typeof ContactRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
   ReviewsRoute: typeof ReviewsRoute
@@ -154,6 +179,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/$slug': {
+      id: '/$slug'
+      path: '/$slug'
+      fullPath: '/$slug'
+      preLoaderRoute: typeof SlugRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -212,13 +244,31 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TermsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/$postSlug': {
+      id: '/blog/$postSlug'
+      path: '/$postSlug'
+      fullPath: '/blog/$postSlug'
+      preLoaderRoute: typeof BlogPostSlugRouteImport
+      parentRoute: typeof BlogRoute
+    }
   }
 }
 
+interface BlogRouteChildren {
+  BlogPostSlugRoute: typeof BlogPostSlugRoute
+}
+
+const BlogRouteChildren: BlogRouteChildren = {
+  BlogPostSlugRoute: BlogPostSlugRoute,
+}
+
+const BlogRouteWithChildren = BlogRoute._addFileChildren(BlogRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  SlugRoute: SlugRoute,
   AboutRoute: AboutRoute,
-  BlogRoute: BlogRoute,
+  BlogRoute: BlogRouteWithChildren,
   ContactRoute: ContactRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
   ReviewsRoute: ReviewsRoute,
@@ -229,3 +279,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
