@@ -16,7 +16,7 @@ export function renderErrorPage(): string {
       .secondary { background: #fff; color: #111; border-color: #d1d5db; }
     </style>
   </head>
-  <body>
+  <body> 
     <div class="card">
       <h1>This page didn't load</h1>
       <p>Something went wrong on our end. You can try refreshing or head back home.</p>
