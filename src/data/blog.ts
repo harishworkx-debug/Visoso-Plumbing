@@ -42,7 +42,7 @@ export const POSTS: BlogPost[] = [
         h: "Bathroom habits that matter most",
         p: [
           "Hair is the dominant cause of bathroom clogs, and a five-dollar hair catcher eliminates most of it. Clean it weekly rather than waiting until the shower pan holds water.",
-          "Only three things belong in a toilet. Wipes labelled flushable do not break down at the speed a sewer lateral requires, and they are the single most common cause of the main line backups we clear in older Orange County neighbourhoods.",
+          "Only three things belong in a toilet. Wipes labelled flushable do not break down at the speed a sewer lateral requires, and they are the single most common cause of the main line backups providers clear in older Orange County neighbourhoods.",
         ],
       },
       {
@@ -342,7 +342,7 @@ export const POSTS: BlogPost[] = [
     ],
     takeaways: [
       "Prioritize valves and rough-in over visible trim",
-      "Thermostatic valves are the best comfort upgrade",
+      "Thermostatic valves are a great comfort upgrade",
       "Choose fixtures with locally available parts",
       "Ventilation prevents more damage than any fixture",
     ],
@@ -386,23 +386,7 @@ export const POSTS: BlogPost[] = [
       "Professional clearing includes diagnosis",
     ],
   },
-  {
-    slug: "commercial-plumbing-maintenance",
-    title: "Commercial Plumbing Maintenance That Protects Revenue",
-    excerpt: "How restaurants, offices and multi-unit properties turn emergencies into a budget line.",
-    category: "Commercial",
-    readMinutes: 7,
-    date: d(9),
-    imageKey: "commercial-plumbing",
-    relatedService: "commercial-plumbing",
-    sections: [
-      {
-        h: "The cost of reactive plumbing",
-        p: [
-          "A restaurant that closes for one evening because of a kitchen drain backup loses far more than the cost of the clearing. Add the emergency rate, the wasted food, the staff hours and the reviews and the real number is several times the invoice.",
-          "Reactive plumbing is also unpredictable, which makes it impossible to budget and guarantees it happens at the worst possible moment.",
-        ],
-      },
+  
       {
         h: "What a maintenance program includes",
         p: [
@@ -492,7 +476,7 @@ export const POSTS: BlogPost[] = [
         h: "Who should stay with a tank",
         p: [
           "Small households with modest simultaneous demand, homes where gas upsizing would be disproportionately expensive, and anyone replacing on short notice with a tight budget are often better served by a quality tank plus a recirculation upgrade.",
-          "There is no universally correct answer, only the right answer for your household's demand curve and your building's constraints. We quote both so you can compare real numbers.",
+          "There is no universally correct answer, only the right answer for your household's demand curve and your building's constraints. providers quote both so you can compare real numbers.",
         ],
       },
     ],
@@ -570,7 +554,7 @@ export const POSTS: BlogPost[] = [
         h: "Deciding what to do",
         p: [
           "The camera decides. If one joint has intrusion and the rest of the run is sound, spot repair. If multiple joints show intrusion and the pipe is deteriorating, replacement stops the annual cycle.",
-          "We present both options with the footage in front of you, including the honest math on how many years of annual cutting equals one replacement.",
+          "providers present both options with the footage in front of you, including the honest math on how many years of annual cutting equals one replacement.",
         ],
       },
     ],
@@ -677,10 +661,10 @@ export const POSTS: BlogPost[] = [
         ],
       },
       {
-        h: "What we look at",
+        h: "What providers look at",
         p: [
           "Pipe material and age, static pressure, visible corrosion, water quality, the leak history and the condition of removed pipe sections. Cut-open pipe is remarkably informative: wall thickness tells you how much life is genuinely left.",
-          "We show you those sections. Evidence beats opinion.",
+          "providers show you those sections. Evidence beats opinion.",
         ],
       },
       {

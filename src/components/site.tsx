@@ -143,9 +143,6 @@ export function Navbar() {
               </div>
             )}
           </div>
-          <Link to="/reviews" className="rounded-full px-4 py-2 text-sm font-semibold hover:bg-secondary">
-            Reviews
-          </Link>
           <Link to="/blog" className="rounded-full px-4 py-2 text-sm font-semibold hover:bg-secondary">
             Blog
           </Link>
@@ -177,7 +174,6 @@ export function Navbar() {
               { to: "/", label: "Home" },
               { to: "/services", label: "All Services" },
               { to: "/service-areas", label: "Service Areas" },
-              { to: "/reviews", label: "Reviews" },
               { to: "/blog", label: "Blog" },
               { to: "/about", label: "About" },
               { to: "/contact", label: "Contact" },
@@ -229,12 +225,11 @@ export function StickyCTA() {
 export function TrustBar() {
   const items = [
     { icon: Clock, label: "24/7 Emergency", sub: "Live dispatch, day or night" },
-    { icon: ShieldCheck, label: "Licensed & Insured", sub: "Workmanship warrantied" },
-    { icon: Star, label: `${BUSINESS.rating} Star Rated`, sub: `${BUSINESS.reviewCount}+ local reviews` },
-    { icon: MessageCircle, label: "English & Español", sub: "Bilingual technicians" },
+    { icon: ShieldCheck, label: "Licensed & Insured", sub: "Verified independent providers" },
+    { icon: MessageCircle, label: "English & Español", sub: "Bilingual providers" },
   ];
   return (
-    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
       {items.map((i, idx) => (
         <Reveal key={i.label} delay={idx * 0.06}>
           <div className="flex h-full items-start gap-3 rounded-2xl border border-border bg-card p-5 shadow-card">
@@ -254,7 +249,7 @@ export function TrustBar() {
 
 export function FinalCTA({
   title = "Need A Plumber In Anaheim Right Now?",
-  body = "Call for immediate dispatch with details of the problem for a fast free estimate.",
+  body = "Call for immediate dispatch with details of the problem to connect with a local provider.",
 }: {
   title?: string;
   body?: string;
@@ -266,7 +261,7 @@ export function FinalCTA({
           <div className="pointer-events-none absolute -right-20 -top-24 h-72 w-72 rounded-full bg-accent/25 blur-3xl" />
           <div className="pointer-events-none absolute -bottom-24 -left-16 h-72 w-72 rounded-full bg-primary/30 blur-3xl" />
           <div className="relative mx-auto max-w-2xl">
-            <Eyebrow>Free Estimate · 24 Hour Service</Eyebrow>
+            <Eyebrow>Connect With A Local Provider</Eyebrow>
             <h2 className="mt-5 text-3xl font-extrabold md:text-5xl">{title}</h2>
             <p className="mt-4 text-base opacity-85">{body}</p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
@@ -310,8 +305,7 @@ export function Footer() {
           <span className="font-display text-xl font-extrabold">Visoso Plumbing</span>
           <p className="mt-1 text-sm opacity-70">Visoso Plomería Económica</p>
           <p className="mt-4 text-sm leading-relaxed opacity-80">
-            Licensed residential and commercial plumbing contractor serving Anaheim and Orange County with 24 hour
-            emergency service, bilingual technicians and honest flat-rate pricing.
+            A free service to assist homeowners in connecting with local service providers. Find available residential plumbers in Anaheim and Orange County.
           </p>
           <div className="mt-6 flex flex-wrap gap-2">
             <CallBtn label="Call Now" />
@@ -372,8 +366,10 @@ export function Footer() {
           </ul>
         </div>
       </div>
-      <div className="container-page mt-12 border-t border-white/10 pt-6 text-xs opacity-60">
-        © {new Date().getFullYear()} Visoso Plumbing · Visoso Plomería Económica · Anaheim, CA
+      <div className="container-page mt-12 border-t border-white/10 pt-8 text-xs opacity-60 grid gap-4">
+        <p>Disclaimer: Visoso Plumbing is a free service to assist homeowners in connecting with local service providers. All contractors/providers are independent and Visoso Plumbing does not warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that the hired contractor furnishes the necessary license and insurance required for the work being performed. All persons depicted in a photo or video are actors or models and not contractors listed on Visoso Plumbing.</p>
+        <p>Same-day and 24/7 emergency services are subject to provider participation, location, technician availability, and demand. Availability is not guaranteed and may vary by market and appointment capacity.</p>
+        <p>© {new Date().getFullYear()} Visoso Plumbing · Visoso Plomería Económica · Anaheim, CA</p>
       </div>
     </footer>
   );

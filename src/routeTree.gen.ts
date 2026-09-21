@@ -15,7 +15,6 @@ import { Route as AboutRouteImport } from './routes/about'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
-import { Route as ReviewsRouteImport } from './routes/reviews'
 import { Route as ServiceAreasRouteImport } from './routes/service-areas'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as TermsRouteImport } from './routes/terms'
@@ -51,11 +50,6 @@ const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
   path: '/privacy-policy',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ReviewsRoute = ReviewsRouteImport.update({
-  id: '/reviews',
-  path: '/reviews',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const ServiceAreasRoute = ServiceAreasRouteImport.update({
   id: '/service-areas',
   path: '/service-areas',
@@ -84,7 +78,6 @@ export interface FileRoutesByFullPath {
   '/blog': typeof BlogRouteWithChildren
   '/contact': typeof ContactRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
-  '/reviews': typeof ReviewsRoute
   '/service-areas': typeof ServiceAreasRoute
   '/services': typeof ServicesRoute
   '/terms': typeof TermsRoute
@@ -97,7 +90,6 @@ export interface FileRoutesByTo {
   '/blog': typeof BlogRouteWithChildren
   '/contact': typeof ContactRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
-  '/reviews': typeof ReviewsRoute
   '/service-areas': typeof ServiceAreasRoute
   '/services': typeof ServicesRoute
   '/terms': typeof TermsRoute
@@ -111,7 +103,6 @@ export interface FileRoutesById {
   '/blog': typeof BlogRouteWithChildren
   '/contact': typeof ContactRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
-  '/reviews': typeof ReviewsRoute
   '/service-areas': typeof ServiceAreasRoute
   '/services': typeof ServicesRoute
   '/terms': typeof TermsRoute
@@ -126,7 +117,6 @@ export interface FileRouteTypes {
     | '/blog'
     | '/contact'
     | '/privacy-policy'
-    | '/reviews'
     | '/service-areas'
     | '/services'
     | '/terms'
@@ -139,7 +129,6 @@ export interface FileRouteTypes {
     | '/blog'
     | '/contact'
     | '/privacy-policy'
-    | '/reviews'
     | '/service-areas'
     | '/services'
     | '/terms'
@@ -152,7 +141,6 @@ export interface FileRouteTypes {
     | '/blog'
     | '/contact'
     | '/privacy-policy'
-    | '/reviews'
     | '/service-areas'
     | '/services'
     | '/terms'
@@ -166,7 +154,6 @@ export interface RootRouteChildren {
   BlogRoute: typeof BlogRouteWithChildren
   ContactRoute: typeof ContactRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
-  ReviewsRoute: typeof ReviewsRoute
   ServiceAreasRoute: typeof ServiceAreasRoute
   ServicesRoute: typeof ServicesRoute
   TermsRoute: typeof TermsRoute
@@ -214,13 +201,6 @@ declare module '@tanstack/react-router' {
       path: '/privacy-policy'
       fullPath: '/privacy-policy'
       preLoaderRoute: typeof PrivacyPolicyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/reviews': {
-      id: '/reviews'
-      path: '/reviews'
-      fullPath: '/reviews'
-      preLoaderRoute: typeof ReviewsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/service-areas': {
@@ -271,7 +251,6 @@ const rootRouteChildren: RootRouteChildren = {
   BlogRoute: BlogRouteWithChildren,
   ContactRoute: ContactRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
-  ReviewsRoute: ReviewsRoute,
   ServiceAreasRoute: ServiceAreasRoute,
   ServicesRoute: ServicesRoute,
   TermsRoute: TermsRoute,

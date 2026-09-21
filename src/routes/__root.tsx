@@ -142,7 +142,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             "Placentia CA",
             "Orange County CA",
           ],
-          description: `${BUSINESS.name} is a licensed residential and commercial plumbing contractor at ${fullAddress} offering 24 hour emergency plumbing across Anaheim and Orange County.`,
+          description: `${BUSINESS.name} is a free service to assist homeowners in connecting with local service providers offering 24 hour emergency plumbing across Anaheim and Orange County.`,
           aggregateRating: {
             "@type": "AggregateRating",
             ratingValue: BUSINESS.rating,

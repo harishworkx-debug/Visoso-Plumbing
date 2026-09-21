@@ -1,3 +1,0 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { ReviewsPage } from "@/components/content-pages";
-export const Route = createFileRoute("/reviews")({ head: () => ({ meta: [{ title: "Visoso Plumbing Reviews | Anaheim Plumber" }, { name: "description", content: "Read why Anaheim and Orange County customers trust Visoso Plumbing for prompt, honest and professional plumbing repairs." }, { property: "og:title", content: "Visoso Plumbing Reviews | Anaheim Plumber" }, { property: "og:description", content: "Customer experiences with Visoso Plumbing in Anaheim and Orange County." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: ReviewsPage });

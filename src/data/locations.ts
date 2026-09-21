@@ -30,7 +30,7 @@ export const LOCATIONS: Location[] = [
     image: anaheim,
     imageAlt: "Sunny Anaheim California residential street with palm trees and a plumbing service van",
     zips: ["92801", "92802", "92804", "92805", "92806", "92807", "92808"],
-    drive: "We are based in Anaheim, so response times here are the fastest in our service area.",
+    drive: "providers are based in Anaheim, so response times here are the fastest in our service area.",
     housingEra: "post-war tract homes from the 1950s and 60s alongside 1990s hillside development",
     landmarks: ["Disneyland Resort", "Angel Stadium", "Honda Center", "Anaheim Packing District", "Anaheim Convention Center"],
     neighborhoods: ["West Anaheim", "Anaheim Hills", "Downtown Anaheim", "Platinum Triangle", "Colony Historic District"],
@@ -42,8 +42,8 @@ export const LOCATIONS: Location[] = [
       "Hillside homes in Anaheim Hills with pressure regulator failures from elevation swings",
     ],
     intro: [
-      "Anaheim is our home city. Our trucks are stocked and dispatched from here, our technicians know which neighborhoods sit on slab and which have crawlspaces, and we have worked on the full range of Anaheim housing stock — from mid-century Colony bungalows to Anaheim Hills two-story homes and Platinum Triangle apartment buildings.",
-      "That local knowledge shortens diagnosis time considerably. When a West Anaheim homeowner describes a warm spot on the floor, we already suspect a hot-side slab leak in original copper. When a Colony District customer describes a main line that clogs every spring, we already suspect roots at a clay joint. Knowing the pattern means we bring the right equipment on the first visit.",
+      "Anaheim is our home city. local trucks are stocked and dispatched from here, local technicians know which neighborhoods sit on slab and which have crawlspaces, and providers have worked on the full range of Anaheim housing stock — from mid-century Colony bungalows to Anaheim Hills two-story homes and Platinum Triangle apartment buildings.",
+      "That local knowledge shortens diagnosis time considerably. When a West Anaheim homeowner describes a warm spot on the floor, we already suspect a hot-side slab leak in original copper. When a Colony District customer describes a main line that clogs every spring, we already suspect roots at a clay joint. Knowing the pattern means providers bring the right equipment on the first visit.",
     ],
   },
   {
@@ -65,7 +65,7 @@ export const LOCATIONS: Location[] = [
     ],
     intro: [
       "Plumbing in Orange means respecting the age of the housing stock. Old Towne homes are protected, beautiful, and frequently plumbed with a century of accumulated retrofits — a little galvanized here, a copper repair there, cast iron drains below. Working in these homes requires patience and a willingness to open as little as possible.",
-      "Our Orange customers also include Chapman-area rentals, Santiago Hills family homes and Orange Park Acres properties on larger lots with long service runs. Each has its own failure patterns, and we bring equipment suited to the property rather than a one-size approach.",
+      "Our Orange customers also include Chapman-area rentals, Santiago Hills family homes and Orange Park Acres properties on larger lots with long service runs. Each has its own failure patterns, and providers bring equipment suited to the property rather than a one-size approach.",
     ],
   },
   {
@@ -86,15 +86,15 @@ export const LOCATIONS: Location[] = [
       "Aging apartment fixture stock generating chronic leaks and high water bills",
     ],
     intro: [
-      "Santa Ana keeps us busy with both single-family and multi-unit work. Denser housing means shared drainage, and shared drainage means a small habit in one unit becomes everyone's backup. We handle a great deal of building-wide jetting and camera work here for owners and property managers who are tired of monthly emergency call-outs.",
-      "The historic districts are a different world again. Floral Park and French Park homes deserve careful work, and we treat original finishes, hardwood and plaster with the caution they require while modernizing the systems hidden behind them.",
+      "Santa Ana keeps us busy with both single-family and multi-unit work. Denser housing means shared drainage, and shared drainage means a small habit in one unit becomes everyone's backup. providers handle a great deal of building-wide jetting and camera work here for owners and property managers who are tired of monthly emergency call-outs.",
+      "The historic districts are a different world again. Floral Park and French Park homes deserve careful work, and providers treat original finishes, hardwood and plaster with the caution they require while modernizing the systems hidden behind them.",
     ],
   },
   {
     slug: "fullerton",
     name: "Fullerton",
     image: fullerton,
-    imageAlt: "Fullerton California hillside home with a technician checking an outdoor water heater",
+    imageAlt: "Fullerton California hillside home with a provider checking an outdoor water heater",
     zips: ["92831", "92832", "92833", "92835"],
     drive: "Fullerton sits just north of us and is covered daily by our north Orange County route.",
     housingEra: "1920s Spanish revival, mid-century ranch and hillside homes near the university",
@@ -109,7 +109,7 @@ export const LOCATIONS: Location[] = [
     ],
     intro: [
       "Fullerton mixes some of the most beautiful older homes in north Orange County with hillside properties where elevation creates its own plumbing behavior. Pressure that is fine at the bottom of a hill can be well above safe limits further along the system, and homes without a functioning regulator quietly destroy their own fixtures and water heaters.",
-      "We also do a lot of work in Fullerton's rental market near the university, where high occupancy accelerates wear on fixtures and drains. Landlords appreciate flat-rate pricing and documented service records for their maintenance files.",
+      "providers also do a lot of work in Fullerton's rental market near the university, where high occupancy accelerates wear on fixtures and drains. Landlords appreciate flat-rate pricing and documented service records for their maintenance files.",
     ],
   },
   {
@@ -120,7 +120,7 @@ export const LOCATIONS: Location[] = [
     zips: ["92840", "92841", "92843", "92844", "92845"],
     drive: "Garden Grove is minutes southwest of our Anaheim base.",
     housingEra: "expansive 1950s and 60s single-story tract housing on slab",
-    landmarks: ["Christ Cathedral", "Garden Grove Park", "Historic Main Street", "Korean Business District", "Village Green"],
+    landmarks: ["Christ Cathedral", "Garden Grove Park", "Historic Main Street", "Korean Community District", "Village Green"],
     neighborhoods: ["West Garden Grove", "Historic Main Street", "Little Saigon border", "Twin Lakes", "Chapman-Brookhurst corridor"],
     localIssues: [
       "Slab-on-grade construction making copper slab leaks the most common major call",
@@ -131,29 +131,29 @@ export const LOCATIONS: Location[] = [
     ],
     intro: [
       "Garden Grove is dominated by single-story slab homes built during the region's post-war boom, and that construction defines the plumbing calls we get here. Copper supply lines routed under the slab have been in service for six decades, and once one pinhole appears, others typically follow within a few years.",
-      "That is why we talk to Garden Grove homeowners openly about rerouting versus repeated slab repairs. Opening a floor twice costs more than routing a new line overhead once, and we would rather you spend that money one time.",
+      "That is why providers talk to Garden Grove homeowners openly about rerouting versus repeated slab repairs. Opening a floor twice costs more than routing a new line overhead once, and providers would rather you spend that money one time.",
     ],
   },
   {
     slug: "buena-park",
     name: "Buena Park",
     image: buenaPark,
-    imageAlt: "Buena Park California suburban street with a technician operating a drain machine",
+    imageAlt: "Buena Park California suburban street with a provider operating a drain machine",
     zips: ["90620", "90621"],
     drive: "Buena Park is immediately northwest of Anaheim and inside our core response zone.",
-    housingEra: "1960s tract housing, newer infill development and significant commercial corridors",
+    housingEra: "1960s tract housing, newer infill development and significant residential communities",
     landmarks: ["Knott's Berry Farm", "The Source OC", "Buena Park Downtown", "Ralph B. Clark Regional Park", "Medieval Times"],
     neighborhoods: ["Los Coyotes", "Buena Park Downtown", "Beach Boulevard corridor", "Bellehurst", "Crescent-Knott area"],
     localIssues: [
-      "Heavy commercial corridor grease line demands along Beach Boulevard",
+      "Heavy residential drain demands along Beach Boulevard",
       "1960s tract homes with original galvanized branch lines",
       "Sewer laterals affected by decades of nearby construction and soil movement",
-      "Restaurant kitchens requiring scheduled interceptor and jetting service",
+      "Larger residential properties requiring scheduled jetting service",
       "Older water heaters in converted garage spaces without proper venting",
     ],
     intro: [
-      "Buena Park splits neatly into two kinds of plumbing work: established residential tracts with aging supply and drain systems, and a dense hospitality and restaurant corridor where drain maintenance is a business-continuity issue rather than an inconvenience.",
-      "We serve both. Residential customers get flat-rate repairs and honest advice on what can wait; commercial kitchens along Beach Boulevard get scheduled jetting and interceptor service that keeps them out of trouble with inspectors and out of an emergency call on a Friday night.",
+      "Buena Park plumbing work primarily centers around established residential tracts with aging supply and drain systems.",
+      "Homeowners get connected with flat-rate repairs and honest advice on what can wait, avoiding emergency calls on a Friday night.",
     ],
   },
   {
@@ -162,7 +162,7 @@ export const LOCATIONS: Location[] = [
     image: orangeCounty,
     imageAlt: "Aerial view of Orange County California suburban housing and freeways at sunset",
     zips: ["Serving north and central Orange County"],
-    drive: "We cover north and central Orange County daily from our Anaheim base.",
+    drive: "providers cover north and central Orange County daily from our Anaheim base.",
     housingEra: "everything from 1920s bungalows to brand new master-planned communities",
     landmarks: ["Disneyland Resort", "Angel Stadium", "South Coast Plaza", "John Wayne Airport", "Old Towne Orange"],
     neighborhoods: ["Anaheim", "Orange", "Santa Ana", "Fullerton", "Garden Grove", "Buena Park", "Placentia", "Yorba Linda"],
@@ -175,7 +175,7 @@ export const LOCATIONS: Location[] = [
     ],
     intro: [
       "Orange County plumbing has regional patterns that repeat from city to city: hard water that scales heaters and fixtures, slab-on-grade construction that turns a pinhole into a floor repair, and mid-century sewer laterals now well past their design life. Recognizing those patterns is most of the diagnostic work.",
-      "Visoso Plumbing serves north and central Orange County with the same flat-rate pricing, bilingual service and 24-hour emergency availability regardless of which city you are in. If you are unsure whether we reach you, call — we will tell you honestly rather than sending someone late.",
+      "Visoso Plumbing serves north and central Orange County with the same flat-rate pricing, bilingual service and 24-hour emergency availability regardless of which city you are in. If you are unsure whether we reach you, call — providers will tell you honestly rather than sending someone late.",
     ],
   },
   {
@@ -218,7 +218,7 @@ export const LOCATIONS: Location[] = [
       "Hard water scale reducing flow in unsoftened homes",
     ],
     intro: [
-      "Placentia's housing is mostly from the 1960s and 70s, which puts its copper supply systems right at the age where pinhole leaks begin appearing. We see a steady stream of first-time slab leak calls here from homeowners who have never had a plumbing problem before.",
+      "Placentia's housing is mostly from the 1960s and 70s, which puts its copper supply systems right at the age where pinhole leaks begin appearing. providers see a steady stream of first-time slab leak calls here from homeowners who have never had a plumbing problem before.",
       "Our advice to Placentia customers is usually the same: get a pressure check and a water heater assessment while things are calm. Both are quick, both are inexpensive, and both catch the failures that otherwise arrive at midnight.",
     ],
   },
@@ -240,8 +240,8 @@ export const LOCATIONS: Location[] = [
       "Kitchen lines without cleanouts making service unnecessarily invasive",
     ],
     intro: [
-      "West Anaheim is literally our neighborhood — our address on West Greenacre Avenue is right here. We know these blocks, this housing stock and the water pressure on these streets, and we can usually be at a West Anaheim property faster than anyone else.",
-      "The dominant issues here are slab leaks and shared-lateral backups in the apartment stock. Both benefit enormously from early detection, and both are things we handle several times a week within a couple of miles of our own front door.",
+      "West Anaheim is literally our neighborhood — our address on West Greenacre Avenue is right here. We know these blocks, this housing stock and the water pressure on these streets, and providers can usually be at a West Anaheim property faster than anyone else.",
+      "The dominant issues here are slab leaks and shared-lateral backups in the apartment stock. Both benefit enormously from early detection, and both are things providers handle several times a week within a couple of miles of our own front door.",
     ],
   },
 ];
@@ -257,5 +257,4 @@ export const LOCATION_SERVICE_SLUGS = [
   "sewer-line-repair",
   "emergency-plumbing",
   "plumbing-repair",
-  "commercial-plumbing",
-];
+  ];
