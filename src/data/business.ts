@@ -2,7 +2,7 @@ export const BUSINESS = {
   name: "Visoso Plumbing",
   altName: "Visoso Plomería Económica",
   legalType: "Residential Plumbing Connection Service",
-  phoneDisplay: "(714) 880-7278",
+  phoneDisplay: "(714) 750-8607",
   phoneHref: "tel:+17148807278",
   email: "service@visosoplomeriaeconomica.com",
   street: "2322 W Greenacre Ave Apt 2",

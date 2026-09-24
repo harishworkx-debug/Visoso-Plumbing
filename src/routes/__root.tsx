@@ -75,7 +75,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Licensed 24 hour plumber in Anaheim, CA. Drain cleaning, leak detection, water heaters, gas lines and emergency plumbing. Free estimates. Call (714) 880-7278.",
+          "Licensed 24 hour plumber in Anaheim, CA. Drain cleaning, leak detection, water heaters, gas lines and emergency plumbing. Free estimates. Call (714) 750-8607.",
       },
       { name: "author", content: "Visoso Plumbing" },
       { property: "og:site_name", content: "Visoso Plumbing" },
@@ -84,8 +84,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "theme-color", content: "#12233a" },
       { property: "og:title", content: "Visoso Plumbing | 24/7 Plumber in Anaheim, CA" },
       { name: "twitter:title", content: "Visoso Plumbing | 24/7 Plumber in Anaheim, CA" },
-      { property: "og:description", content: "Licensed 24 hour plumber in Anaheim, CA. Drain cleaning, leak detection, water heaters, gas lines and emergency plumbing. Free estimates. Call (714) 880-7278." },
-      { name: "twitter:description", content: "Licensed 24 hour plumber in Anaheim, CA. Drain cleaning, leak detection, water heaters, gas lines and emergency plumbing. Free estimates. Call (714) 880-7278." },
+      { property: "og:description", content: "Licensed 24 hour plumber in Anaheim, CA. Drain cleaning, leak detection, water heaters, gas lines and emergency plumbing. Free estimates. Call (714) 750-8607." },
+      { name: "twitter:description", content: "Licensed 24 hour plumber in Anaheim, CA. Drain cleaning, leak detection, water heaters, gas lines and emergency plumbing. Free estimates. Call (714) 750-8607." },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/17546fd4-bd88-4e18-85db-1f47c342bb8c/id-preview-4be64d18--6e9db87f-972e-4982-b906-5aa65d246e82.lovable.app-1785752980936.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/17546fd4-bd88-4e18-85db-1f47c342bb8c/id-preview-4be64d18--6e9db87f-972e-4982-b906-5aa65d246e82.lovable.app-1785752980936.png" },
     ],
