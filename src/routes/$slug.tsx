@@ -111,6 +111,7 @@ function SeoLandingPage() {
           ))}
         </div>
       </Section>
+    )}
     {!locationOnly && (
       <Section className="bg-surface overflow-hidden">
         <div className="mx-auto max-w-3xl text-center mb-10">
