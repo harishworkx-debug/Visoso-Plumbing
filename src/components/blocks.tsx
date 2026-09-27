@@ -38,7 +38,7 @@ export function PageHero({
           <div className="mt-8 flex flex-wrap gap-3">{children}</div>
           <div className="mt-8 flex flex-wrap items-center gap-5 text-xs opacity-80">
             <span className="flex items-center gap-1.5">
-              <Star className="h-4 w-4 fill-accent text-accent" /> 4.9 star rated locally
+              <Star className="h-4 w-4 fill-accent text-accent" /> 4.5★ based on 21 reviews
             </span>
             <span className="flex items-center gap-1.5">
               <CheckCircle2 className="h-4 w-4 text-accent" /> Licensed &amp; insured
@@ -111,6 +111,28 @@ export function StatGrid({ items }: { items: { value: string; label: string }[] 
           </div>
         </Reveal>
       ))}
+    </div>
+  );
+}
+
+export function ReviewCard({ review }: { review: import("@/data/reviews").Review }) {
+  return (
+    <div className="flex h-full flex-col rounded-2xl border border-border bg-card p-6 shadow-card">
+      <div className="flex items-center gap-2 mb-4">
+        {Array.from({ length: 5 }).map((_, i) => (
+          <Star
+            key={i}
+            className={`h-4 w-4 ${i < review.rating ? "fill-accent text-accent" : "fill-muted text-muted"}`}
+          />
+        ))}
+      </div>
+      <p className="flex-1 text-sm leading-relaxed text-muted-foreground mb-4">
+        {review.text ? `"${review.text}"` : ""}
+      </p>
+      <div>
+        <p className="font-bold text-sm">{review.name}</p>
+        <p className="text-xs text-muted-foreground">{review.time}</p>
+      </div>
     </div>
   );
 }

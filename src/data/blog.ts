@@ -62,7 +62,7 @@ export const POSTS: BlogPost[] = [
   },
   {
     slug: "signs-your-water-heater-needs-replacement",
-    title: "7 Signs Your Water Heater Needs Replacement",
+    title: "Water Heater Repair vs Replacement in Anaheim",
     excerpt: "How to tell the difference between a cheap repair and a tank on borrowed time.",
     category: "Water Heaters",
     readMinutes: 7,
@@ -105,10 +105,11 @@ export const POSTS: BlogPost[] = [
       "Annual flushing meaningfully extends tank life",
       "Replacement is the moment to evaluate tankless or hybrid options",
     ],
+    relatedLinks: [{label: 'Emergency Plumbing Anaheim', url: '/emergency-plumbing-anaheim-ca'}, {label: 'Water Heater Repair Anaheim', url: '/water-heater-repair-anaheim-ca'}],
   },
   {
     slug: "benefits-of-sewer-camera-inspection",
-    title: "The Real Benefits Of A Sewer Camera Inspection",
+    title: "Sewer Camera Inspection: When Do You Need One?",
     excerpt: "Why video evidence is the cheapest money you will ever spend on your sewer line.",
     category: "Sewer",
     readMinutes: 6,
@@ -144,10 +145,11 @@ export const POSTS: BlogPost[] = [
       "Essential due diligence for any pre-1980 property purchase",
       "Post-repair inspections verify you got what you paid for",
     ],
+    relatedLinks: [{label: 'Camera Inspection Anaheim', url: '/camera-inspection-anaheim-ca'}, {label: 'Drain Cleaning Anaheim', url: '/drain-cleaning-anaheim-ca'}, {label: 'Emergency Plumbing Anaheim', url: '/emergency-plumbing-anaheim-ca'}],
   },
   {
     slug: "gas-leak-warning-signs",
-    title: "Gas Leak Warning Signs Every Homeowner Should Know",
+    title: "Gas Leak Warning Signs Every Anaheim Homeowner Should Know",
     excerpt: "What to smell, hear and watch for — and exactly what to do in the first sixty seconds.",
     category: "Gas Safety",
     readMinutes: 5,
@@ -183,10 +185,11 @@ export const POSTS: BlogPost[] = [
       "Yellow flames and soot indicate incomplete combustion",
       "Insist on a documented pressure test after any gas repair",
     ],
+    relatedLinks: [{label: 'Emergency Plumbing Anaheim', url: '/emergency-plumbing-anaheim-ca'}, {label: 'Leak Detection Anaheim', url: '/leak-detection-anaheim-ca'}],
   },
   {
     slug: "emergency-plumbing-checklist",
-    title: "The Emergency Plumbing Checklist Every Household Needs",
+    title: "24 Hour Emergency Plumbing: What to Do Before the Plumber Arrives",
     excerpt: "Five minutes of preparation now saves thousands in water damage later.",
     category: "Emergency",
     readMinutes: 6,
@@ -222,6 +225,7 @@ export const POSTS: BlogPost[] = [
       "Stop all water use during a sewage backup",
       "Photograph damage before cleanup for insurance",
     ],
+    relatedLinks: [{label: 'Emergency Plumbing Anaheim', url: '/emergency-plumbing-anaheim-ca'}, {label: 'Leak Detection Anaheim', url: '/leak-detection-anaheim-ca'}],
   },
   {
     slug: "california-plumbing-maintenance-guide",
@@ -349,7 +353,7 @@ export const POSTS: BlogPost[] = [
   },
   {
     slug: "drain-cleaning-benefits",
-    title: "Professional Drain Cleaning vs Store-Bought Chemicals",
+    title: "How Much Does a Plumber Cost in Anaheim CA?",
     excerpt: "What actually happens inside your pipes when you pour a bottle of drain cleaner.",
     category: "Drains",
     readMinutes: 5,
@@ -385,6 +389,7 @@ export const POSTS: BlogPost[] = [
       "Chemicals make the line hazardous to service",
       "Professional clearing includes diagnosis",
     ],
+    relatedLinks: [{label: 'Emergency Plumbing Anaheim', url: '/emergency-plumbing-anaheim-ca'}, {label: 'Plumbing Repair Anaheim', url: '/plumbing-repair-anaheim-ca'}],
   },
   {
     slug: "commercial-plumbing-maintenance",
@@ -505,7 +510,7 @@ export const POSTS: BlogPost[] = [
   },
   {
     slug: "water-pressure-too-high",
-    title: "Is Your Water Pressure Too High? How To Check",
+    title: "How to Detect a Hidden Water Leak in Your Anaheim Home",
     excerpt: "High pressure destroys fixtures and pipes silently. A ten dollar gauge finds it in two minutes.",
     category: "Maintenance",
     readMinutes: 5,
@@ -541,10 +546,11 @@ export const POSTS: BlogPost[] = [
       "Above 80 psi requires a pressure reducing valve",
       "A regulator makes a thermal expansion tank necessary",
     ],
+    relatedLinks: [{label: 'Leak Detection Anaheim', url: '/leak-detection-anaheim-ca'}, {label: 'Emergency Plumbing Anaheim', url: '/emergency-plumbing-anaheim-ca'}],
   },
   {
     slug: "tree-roots-in-sewer-lines",
-    title: "Tree Roots In Sewer Lines: Prevention And Repair",
+    title: "How Often Should You Clean Your Main Sewer Line?",
     excerpt: "Why mature Orange County neighborhoods have root problems, and what actually solves them.",
     category: "Sewer",
     readMinutes: 6,
@@ -580,6 +586,7 @@ export const POSTS: BlogPost[] = [
       "Foaming treatments extend intervals between cuttings",
       "The camera decides between spot repair and replacement",
     ],
+    relatedLinks: [{label: 'Drain Cleaning Anaheim', url: '/drain-cleaning-anaheim-ca'}, {label: 'Sewer Line Repair Anaheim', url: '/sewer-line-repair-anaheim-ca'}, {label: 'Emergency Plumbing Anaheim', url: '/emergency-plumbing-anaheim-ca'}],
   },
   {
     slug: "hard-water-orange-county",

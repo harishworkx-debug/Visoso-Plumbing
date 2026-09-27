@@ -7,6 +7,8 @@ import { CallBtn, Eyebrow, FAQBlock, FinalCTA, Reveal, Section, TrustBar } from 
 import { BUSINESS } from "@/data/business";
 import { FEATURED_SERVICES } from "@/data/services";
 import { LOCATIONS } from "@/data/locations";
+import { REVIEWS } from "@/data/reviews";
+import { ReviewCard } from "@/components/blocks";
 
 export const Route = createFileRoute("/")({
   head: () => ({ meta: [
@@ -28,13 +30,13 @@ const homeFaqs = [
 
 function HomePage() {
   return <>
-    <PageHero eyebrow="Anaheim's 24 Hour Plumbing Team" title="Plumbing Fixed Right. Day Or Night." sub="Fast, honest residential plumbing connection service across Anaheim and Orange County. Verified independent providers, upfront pricing, bilingual service and real 24/7 emergency dispatch." image={heroImage} imageAlt="Provider repairing plumbing in an Anaheim home" priority>
+    <PageHero eyebrow="Anaheim's 24 Hour Plumbing Team" title="24/7 Plumber in Anaheim, CA" sub="Fast residential plumbing service, emergency repairs, drain cleaning, water heater repair and leak detection throughout Anaheim and Orange County." image={heroImage} imageAlt="Plumber repairing plumbing in an Anaheim home" priority>
       <CallBtn label={`Call ${BUSINESS.phoneDisplay}`} />
     </PageHero>
     <Section className="!py-10"><TrustBar /></Section>
     <Section className="bg-surface"><div className="mx-auto max-w-3xl text-center"><Eyebrow>Complete Plumbing Care</Eyebrow><h2 className="mt-5 text-3xl font-extrabold md:text-5xl">One Local Team For Every Plumbing Problem</h2><p className="mt-4 text-muted-foreground">From a dripping faucet to a failed sewer line, our stocked trucks and experienced technicians are prepared to diagnose the cause and complete a lasting repair.</p></div><div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">{FEATURED_SERVICES.slice(0, 6).map(service => <ServiceCard key={service.slug} service={service} />)}</div><div className="mt-10 text-center"><Link to="/services" className="inline-flex items-center gap-2 font-bold text-primary">View all plumbing services <ArrowRight className="h-4 w-4" /></Link></div></Section>
-    <Section><div className="grid items-center gap-12 lg:grid-cols-2"><Reveal><img src={teamImage} alt="Visoso Plumbing team ready for an Anaheim service call" width={1400} height={900} loading="lazy" className="aspect-[4/3] w-full rounded-3xl object-cover shadow-lift" /></Reveal><Reveal delay={0.08}><Eyebrow>Why Anaheim Calls Visoso</Eyebrow><h2 className="mt-5 text-3xl font-extrabold md:text-5xl">Straight Answers. Careful Work. No Surprise Bill.</h2><p className="mt-5 leading-relaxed text-muted-foreground">Providers arrive within a realistic service window, protect your floors and finishes, show you what failed, and quote the work before touching the system.</p><p className="mt-4 leading-relaxed text-muted-foreground">Providers based in Anaheim understand local housing: aging galvanized pipe, slab leaks, root intrusion and hard-water scale.</p><ul className="mt-7 grid gap-3 sm:grid-cols-2">{["Upfront flat-rate pricing", "24/7 live emergency response", "English and Spanish service", "Clean, stocked service trucks", "Residential plumbing", "Providers warranty workmanship"].map(item => <li key={item} className="flex items-center gap-2 text-sm font-semibold"><CheckCircle2 className="h-5 w-5 text-accent" />{item}</li>)}</ul><div className="mt-8"><CallBtn label="Schedule A Plumber" /></div></Reveal></div></Section>
-    <Section className="surface-ink"><StatGrid items={[{ value: "24/7", label: "Emergency Availability" }, { value: "4.9★", label: "Local Customer Rating" }, { value: "10+", label: "Orange County Areas" }, { value: "2", label: "Languages Spoken" }]} /></Section>
+    <Section><div className="grid items-center gap-12 lg:grid-cols-2"><Reveal><img src={teamImage} alt="Visoso Plumbing team ready for an Anaheim service call" width={1400} height={900} loading="lazy" className="aspect-[4/3] w-full rounded-3xl object-cover shadow-lift" /></Reveal><Reveal delay={0.08}><Eyebrow>Why Anaheim Calls Visoso</Eyebrow><h2 className="mt-5 text-3xl font-extrabold md:text-5xl">Straight Answers. Careful Work. No Surprise Bill.</h2><p className="mt-5 leading-relaxed text-muted-foreground">Our plumbers arrive within a realistic service window, protect your floors and finishes, show you what failed, and quote the work before touching the system.</p><p className="mt-4 leading-relaxed text-muted-foreground">Our team based in Anaheim understands local housing: aging galvanized pipe, slab leaks, root intrusion and hard-water scale.</p><ul className="mt-7 grid gap-3 sm:grid-cols-2">{["Upfront flat-rate pricing", "24/7 live emergency response", "English and Spanish service", "Clean, stocked service trucks", "Residential plumbing", "We warranty workmanship"].map(item => <li key={item} className="flex items-center gap-2 text-sm font-semibold"><CheckCircle2 className="h-5 w-5 text-accent" />{item}</li>)}</ul><div className="mt-8"><CallBtn label="Schedule A Plumber" /></div></Reveal></div></Section>
+    <Section className="surface-ink"><StatGrid items={[{ value: "24/7", label: "Emergency Availability" }, { value: "4.5★", label: "Based on 21 Reviews" }, { value: "10+", label: "Orange County Areas" }, { value: "2", label: "Languages Spoken" }]} /></Section>
     <Section><div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]"><div><Eyebrow>How Service Works</Eyebrow><h2 className="mt-5 text-3xl font-extrabold md:text-4xl">From First Call To Final Test</h2><p className="mt-4 text-muted-foreground">Our process is built around accurate diagnosis, informed approval and verified results.</p></div><div className="grid gap-4 sm:grid-cols-2">{[
       { icon: PhoneCall, title: "Tell us what happened", body: "Call us with the issue. We triage the issue and give you a real arrival window." },
       { icon: Wrench, title: "We diagnose the cause", body: "A licensed technician tests the system instead of guessing from symptoms." },
@@ -43,6 +45,20 @@ function HomePage() {
     ].map(step => <div key={step.title} className="rounded-2xl border border-border bg-card p-6 shadow-card"><step.icon className="h-6 w-6 text-accent" /><h3 className="mt-4 font-bold">{step.title}</h3><p className="mt-2 text-sm leading-relaxed text-muted-foreground">{step.body}</p></div>)}</div></div></Section>
     <Section className="bg-surface"><div className="mx-auto max-w-3xl text-center"><Eyebrow>Local Service Area</Eyebrow><h2 className="mt-5 text-3xl font-extrabold md:text-5xl">Your Orange County Neighborhood Plumber</h2></div><div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">{LOCATIONS.map(location => <Link key={location.slug} to="/$slug" params={{ slug: `plumber-${location.slug}-ca` }} className="flex items-center gap-3 rounded-2xl border border-border bg-card p-4 font-bold shadow-card transition-transform hover:-translate-y-1"><MapPin className="h-5 w-5 text-accent" /> {location.name}</Link>)}</div></Section>
     <Section><div className="grid gap-12 lg:grid-cols-2"><div><Eyebrow>Common Questions</Eyebrow><h2 className="mt-5 text-3xl font-extrabold md:text-4xl">Plumbing Help, Without The Runaround</h2><p className="mt-4 text-muted-foreground">Call any time. A real person will help you decide what needs immediate attention.</p></div><FAQBlock faqs={homeFaqs} /></div></Section>
+    <Section className="bg-surface overflow-hidden">
+      <div className="mx-auto max-w-3xl text-center mb-10">
+        <Eyebrow>Real Customer Reviews</Eyebrow>
+        <h2 className="mt-5 text-3xl font-extrabold md:text-5xl">Hear From Our Community</h2>
+        <p className="mt-4 text-muted-foreground">We value all feedback and strive to provide honest, reliable service to every home.</p>
+      </div>
+      <div className="flex gap-4 overflow-x-auto pb-8 snap-x" style={{ scrollbarWidth: 'none' }}>
+        {REVIEWS.map((review, idx) => (
+          <div key={idx} className="w-[300px] shrink-0 snap-center">
+            <ReviewCard review={review} />
+          </div>
+        ))}
+      </div>
+    </Section>
     <FinalCTA />
   </>;
 }
