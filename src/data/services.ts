@@ -43,8 +43,8 @@ export const SERVICES: Service[] = [
     featured: true,
     intro: [
       "Plumbing emergencies never schedule themselves politely. A supply line lets go at 2 a.m., a main sewer backs up during a family dinner, or a water heater splits open the morning you leave for work. Visoso Plumbing answers the phone every hour of every day, including weekends and holidays, and connects you with a licensed technician who arrives with a fully stocked truck rather than a promise to come back tomorrow with parts.",
-      "local emergency crews are trained to stabilize first and diagnose second. That means locating and closing the correct shutoff, containing active water, protecting flooring and drywall, and only then opening the wall or floor to find the true source. That sequence is what keeps a $400 repair from becoming a $9,000 restoration claim, and it is the single biggest difference between a rushed handyman and an experienced emergency plumber.",
-      "Every emergency visit ends with a written, flat-rate estimate before work begins, a walkthrough of what failed and why, and honest guidance on whether a permanent repair should happen now or can be safely scheduled. bilingual our plumbers speak English and Spanish, our plumbers clean the workspace before we leave, and our plumbers stand behind every emergency repair with a workmanship warranty.",
+      "Our emergency plumbing crews are trained to stabilize first and diagnose second. That means locating and closing the correct shutoff, containing active water, protecting flooring and drywall, and only then opening the wall or floor to find the true source. That sequence is what keeps a $400 repair from becoming a $9,000 restoration claim, and it is the single biggest difference between a rushed handyman and an experienced emergency plumber.",
+      "Every emergency visit ends with a written, flat-rate estimate before work begins, a walkthrough of what failed and why, and honest guidance on whether a permanent repair should happen now or can be safely scheduled. Our bilingual technicians speak English and Spanish, clean the workspace completely before leaving, and back all completed emergency work with a clear workmanship warranty.",
     ],
     signs: [
       "Water actively spraying, pooling, or running behind a wall or under a slab",
@@ -79,10 +79,10 @@ export const SERVICES: Service[] = [
       "Licensed, insured and workmanship-warrantied",
     ],
     faqs: [
-      { q: "How fast can you get here?", a: "Most emergency calls inside our core service area are reached quickly, and our plumbers give you a real arrival window on the phone instead of a vague promise. If we cannot reach you fast enough, we will tell you honestly so you can protect your property." },
-      { q: "Do you charge extra at night or on weekends?", a: "Emergency work is quoted as a flat rate before our plumbers start, so you always know the price up front. our plumbers do not add surprise surcharges after the repair is finished." },
+      { q: "How fast can you get here?", a: "Most emergency calls inside our core service area are reached quickly. We give you a realistic arrival window directly on the phone instead of a vague estimate. If we cannot reach you in time, we tell you honestly so you can protect your home." },
+      { q: "Do you charge extra at night or on weekends?", a: "Emergency work is quoted as a flat rate before we start, so you always know the exact price up front. We never add surprise fees or after-hours surcharges after the repair is completed." },
       { q: "What should I do while waiting?", a: "Close the main water shutoff (usually near the front hose bib or at the meter), turn off power to any flooded area at the breaker, and move belongings off wet flooring. If you smell gas, leave the property first and call from outside." },
-      { q: "Can you repair it permanently on the first visit?", a: "In most cases yes. our trucks carry the fittings, valves and pipe most residential and light commercial systems require. Where a permanent fix needs excavation for [pipe repair](/pipe-repair-{{locationSlug}}-ca) or a permit, our plumbers make the property safe and schedule the full repair immediately." },
+      { q: "Can you repair it permanently on the first visit?", a: "In most cases, yes. Our trucks carry the fittings, valves, and pipes required for common residential repairs. Where a permanent fix requires excavation for [pipe repair](/pipe-repair-{{locationSlug}}-ca) or municipal permits, we stabilize the property first and schedule the permanent repair immediately." },
     ],
   },
   {
@@ -97,7 +97,7 @@ export const SERVICES: Service[] = [
     intro: [
       "A slow drain is a warning, not an inconvenience. Grease, soap scum, hair and mineral scale build a lining inside the pipe until the effective diameter is half of what the plumbing was designed for. Store-bought chemicals eat a hole through the middle of that lining, restore flow for a week or two, and leave the rest to harden again — often while corroding older galvanized or cast iron pipe from the inside.",
       "Visoso Plumbing clears drains mechanically. Sectional and drum cabling machines cut through the blockage, and for lines with heavy grease, scale or root intrusion we hydro jet at controlled pressure to scour the pipe wall back to full diameter. On main line work we follow with a camera so you can see the pipe is genuinely clear rather than trusting that the water just went down.",
-      "our plumbers also tell you the truth about what caused the clog. Sometimes it is a kitchen habit, sometimes it is a belly in the line, a collapsed clay section requiring [sewer repair](/sewer-line-repair-{{locationSlug}}-ca), or roots at a joint. Knowing which one you have is the difference between clearing a drain once and paying for the same call every six months.",
+      "We also tell you the honest cause of the clog. Sometimes it is a kitchen habit, sometimes a pipe belly, a collapsed clay section requiring [sewer repair](/sewer-line-repair-{{locationSlug}}-ca), or root intrusion. Knowing which one you have is the difference between clearing a drain once and paying for the same call every six months.",
     ],
     signs: [
       "Sinks or tubs that drain slower than they used to",
@@ -108,7 +108,7 @@ export const SERVICES: Service[] = [
       "Water rising in a floor drain when the washing machine empties",
     ],
     process: [
-      { title: "Locate and isolate", desc: "our plumbers identify the affected branch or main and choose the correct access point so nothing is forced through a fixture." },
+      { title: "Locate and isolate", desc: "We identify the affected branch or main and choose the correct access point so nothing is forced through a fixture." },
       { title: "Mechanical clearing", desc: "Cable machines with the correct cutter head break through the blockage without damaging your pipe." },
       { title: "Hydro jetting when needed", desc: "High pressure water scours grease, scale and root hair off the pipe wall for a full-diameter restoration." },
       { title: "Camera verification", desc: "A push camera confirms the line is clear and reveals any structural defect hiding behind the clog." },
@@ -132,9 +132,9 @@ export const SERVICES: Service[] = [
       "Warrantied drain clearing on qualifying lines",
     ],
     faqs: [
-      { q: "Is hydro jetting safe for older pipes?", a: "It is when it is done correctly. our plumbers camera the line first and adjust pressure to the pipe material and condition. If a line is too deteriorated to jet safely, we say so and recommend cabling or [sewer line repair](/sewer-line-repair-{{locationSlug}}-ca) instead." },
+      { q: "Is hydro jetting safe for older pipes?", a: "It is when done correctly. We camera-inspect the line first and adjust water pressure to the pipe's material and condition. If a line is too deteriorated to jet safely, we say so and recommend cabling or [sewer line repair](/sewer-line-repair-{{locationSlug}}-ca) instead." },
       { q: "Why does my drain keep clogging?", a: "Repeat clogs usually mean a structural issue — a low spot that holds water, offset joints, root intrusion, or a section of pipe that has scaled down. A camera inspection identifies which, so you stop paying for the same clearing over and over." },
-      { q: "Should I use liquid drain cleaner first?", a: "our plumbers recommend against it. Those products rarely clear a full blockage, they damage older metal pipe, and they make the drain hazardous for the technician who opens it afterwards." },
+      { q: "Should I use liquid drain cleaner first?", a: "We strongly advise against chemical openers. Those products rarely clear a full blockage, they corrode older metal pipes, and they make the drain hazardous for the technician opening it afterwards." },
       { q: "How often should drains be cleaned?", a: "Most homes benefit from main line maintenance every 18 to 24 months. Some larger residential properties often need quarterly or semi-annual jetting." },
     ],
   },
@@ -161,11 +161,11 @@ export const SERVICES: Service[] = [
       "Buying a property and needing pre-purchase due diligence",
     ],
     process: [
-      { title: "Access the line", desc: "our plumbers enter through an existing cleanout, or pull a toilet where no cleanout exists, to protect fixtures." },
+      { title: "Access the line", desc: "We enter through an existing cleanout, or pull a toilet where no cleanout exists, to protect your finished bathroom." },
       { title: "Run the camera", desc: "A self-leveling HD head travels the pipe while we narrate distance, material and condition." },
       { title: "Locate defects", desc: "A sonde locator marks the surface position and depth of any problem area with paint or flags." },
       { title: "Document findings", desc: "You receive recorded footage and a written report with photos of each defect." },
-      { title: "Options, not pressure", desc: "our plumbers present maintenance, spot repair and full replacement options with honest trade-offs for each." },
+      { title: "Options, not pressure", desc: "We present maintenance, spot repair, and full replacement options with honest trade-offs for each." },
     ],
     includes: [
       "Main sewer line video inspection",
@@ -187,7 +187,7 @@ export const SERVICES: Service[] = [
     faqs: [
       { q: "Do I need a cleanout for an inspection?", a: "It helps a great deal. Where no accessible cleanout exists, our plumbers can pull a toilet to enter the line, and we will often recommend installing a proper cleanout so future service and maintenance is faster and cheaper." },
       { q: "Will I get a copy of the video?", a: "Yes. Every inspection includes the recorded footage and a written summary of findings, which is exactly what you need for a real estate negotiation or an insurance claim." },
-      { q: "How long does an inspection take?", a: "A standard residential main line inspection typically takes under an hour, including locating and marking any defect our plumbers find." },
+      { q: "How long does an inspection take?", a: "A standard residential main line inspection typically takes under an hour, including locating and depth-marking any defects we discover." },
       { q: "Can a camera find a leak under a slab?", a: "A camera confirms breaks and separations in drain lines under a slab. Pressurized water leaks are located with acoustic and thermal equipment — we frequently use both together." },
     ],
   },
@@ -201,9 +201,9 @@ export const SERVICES: Service[] = [
     priceNote: "Includes permit-ready installation, haul-away of the old unit and full startup testing.",
     featured: true,
     intro: [
-      "A water heater is the hardest working appliance in the house, and it is also the one most often installed badly. Missing expansion tanks, undersized gas lines, improper venting, no seismic strapping, and drain pans that drain nowhere are all things our plumbers find weekly in Anaheim garages. Those shortcuts void warranties and, in the case of venting and gas sizing, create genuine safety hazards.",
+      "A water heater is the hardest working appliance in the house, and it is also the one most often installed badly. Missing expansion tanks, undersized gas lines, improper venting, absent seismic strapping, and drain pans that drain nowhere are all issues our technicians encounter weekly in local homes. Those shortcuts void manufacturer warranties and create genuine safety hazards.",
       "Visoso Plumbing sizes the unit to your household's actual demand — fixture count, simultaneous use, incoming water temperature and gas or electrical capacity — then installs to California Plumbing Code with proper seismic strapping, a thermal expansion tank, correct venting, a sediment trap on the gas line, and a code-compliant temperature and pressure relief discharge.",
-      "our plumbers install standard atmospheric tanks, high-efficiency power vent models, heat pump hybrids and tankless systems, and we are equally happy to service what you already own. When our plumbers quote a replacement, our plumbers show you the reasoning: age, anode condition, sediment, corrosion, and the real cost curve of repairing an aging tank versus replacing it once.",
+      "We install standard atmospheric tanks, high-efficiency power-vent models, heat pump hybrids, and tankless systems, and we are equally prepared to service what you already own. When we quote a replacement, we explain the exact reasoning: age, anode condition, sediment buildup, and the real cost comparison of repairing an aging tank versus replacing it once.",
     ],
     signs: [
       "The unit is more than 10 to 12 years old",
@@ -214,11 +214,11 @@ export const SERVICES: Service[] = [
       "Repeated pilot or ignition failures",
     ],
     process: [
-      { title: "Load sizing", desc: "our plumbers calculate real demand rather than defaulting to whatever size was there before." },
+      { title: "Load sizing", desc: "We calculate your household's actual peak demand rather than defaulting to whatever size was previously installed." },
       { title: "Transparent quote", desc: "Flat-rate pricing including unit, materials, permit-ready installation and haul-away." },
       { title: "Safe removal", desc: "Old unit is drained, disconnected, and removed without dragging sediment through your home." },
       { title: "Code installation", desc: "Seismic strapping, expansion tank, sediment trap, correct venting and TPR discharge routing." },
-      { title: "Startup and walkthrough", desc: "Combustion and temperature verified, then our plumbers show you the shutoffs and maintenance schedule." },
+      { title: "Startup and walkthrough", desc: "Combustion and temperature verified, followed by a complete walkthrough of shutoffs and maintenance schedules." },
     ],
     includes: [
       "40, 50, 75 and 100 gallon tank installation",
@@ -238,7 +238,7 @@ export const SERVICES: Service[] = [
       "Same-day replacement available in most cases",
     ],
     faqs: [
-      { q: "Tank or tankless — which is better for my home?", a: "Tankless wins on endless hot water, footprint and long-term efficiency, but needs adequate gas supply and venting. A quality tank is often the better value for smaller households or where gas upsizing would be costly. our plumbers price both honestly and let you choose." },
+      { q: "Tank or tankless — which is better for my home?", a: "Tankless excels on continuous hot water, space savings, and efficiency, but requires adequate gas supply and venting. A quality tank is often the better value for smaller households. We price both options transparently so you can choose what fits best." },
       { q: "Can you replace a water heater the same day?", a: "In most cases yes. We stock common residential sizes and can usually complete a straightforward replacement in a single visit." },
       { q: "Why does California require an expansion tank?", a: "Closed systems with a check valve or pressure regulator have nowhere for heated water to expand. Without a thermal expansion tank, pressure spikes stress fixtures, the tank itself, and can trigger nuisance TPR valve discharge." },
       { q: "Do you flush and maintain water heaters?", a: "Yes. Annual flushing, anode rod inspection and burner cleaning are the cheapest way to extend the life of a tank, and tankless units need periodic descaling in our hard-water region." },
@@ -254,8 +254,8 @@ export const SERVICES: Service[] = [
     priceNote: "Diagnostic fee applied to the repair when you move forward with us.",
     intro: [
       "Losing hot water is disruptive, but it rarely means the whole heater is finished. Thermocouples, igniters, gas control valves, heating elements, thermostats, dip tubes and TPR valves are all serviceable parts, and a competent diagnosis usually restores hot water the same day for a fraction of replacement cost.",
-      "our technicians test rather than assume. We verify gas pressure and combustion on gas units, check element resistance and thermostat calibration on electric units, inspect the anode rod and sediment load, and pressure test connections before declaring anything failed. That discipline is why our plumbers replace fewer water heaters than the average company and why our customers keep our number.",
-      "There is also a point where repair stops making sense — a tank leaking from the shell, a 14-year-old unit needing a gas valve, or a heater so scaled that recovery time has collapsed. When we reach that point our plumbers tell you plainly, show you what we are seeing, and quote [water heater installation](/water-heater-installation-{{locationSlug}}-ca) without pressure.",
+      "Our licensed technicians test thoroughly rather than guessing. We verify gas pressure, check electrical element resistance, inspect anode rods, and pressure-test connections before condemning any unit. That diagnostic discipline is why we replace fewer water heaters unnecessarily and why homeowners keep our number.",
+      "There is also a point where repair stops making sense—a tank leaking from the shell, an aged unit needing an expensive gas valve, or a heater so scaled that recovery time has collapsed. When we reach that point, we explain the situation plainly, show you the evidence, and quote [water heater installation](/water-heater-installation-{{locationSlug}}-ca) without high-pressure sales.",
     ],
     signs: [
       "No hot water or hot water that runs out unusually fast",
@@ -267,7 +267,7 @@ export const SERVICES: Service[] = [
     ],
     process: [
       { title: "Full system test", desc: "Gas pressure, combustion, element and thermostat testing depending on unit type." },
-      { title: "Component diagnosis", desc: "our plumbers identify the failed part instead of recommending a blanket replacement." },
+      { title: "Component diagnosis", desc: "We isolate the specific failed component rather than recommending an expensive blanket replacement." },
       { title: "Clear repair-or-replace advice", desc: "You get the honest math on repair cost versus remaining unit life." },
       { title: "Repair with quality parts", desc: "OEM-grade components installed and tested under real load." },
       { title: "Preventative service", desc: "Flush, anode check and burner cleaning to extend the life of the unit." },
@@ -290,8 +290,8 @@ export const SERVICES: Service[] = [
       "Workmanship warranty on every repair",
     ],
     faqs: [
-      { q: "Is it worth repairing an older water heater?", a: "If the tank shell is sound and the repair is a control component, repair often makes sense up to about year ten. Past that, our plumbers walk you through repair cost versus expected remaining life so the decision is yours with real numbers." },
-      { q: "Why is my hot water rusty?", a: "Usually a spent anode rod letting the tank interior corrode, or corroding galvanized supply piping. our plumbers isolate which by testing hot and cold separately." },
+      { q: "Is it worth repairing an older water heater?", a: "If the tank shell is sound and the repair is a control component, repair often makes sense up to about year ten. Past that, we walk you through repair cost versus expected remaining life so you make an informed decision with real numbers." },
+      { q: "Why is my hot water rusty?", a: "Usually a depleted anode rod allowing tank interior corrosion, or deteriorating galvanized supply piping. We determine the exact cause by testing hot and cold supplies separately." },
       { q: "What does the dripping pipe near my heater mean?", a: "That is the temperature and pressure relief discharge. Dripping means either excessive pressure in a closed system or a failing TPR valve — both need attention promptly." },
       { q: "Do tankless units need service?", a: "Yes. In Orange County's hard water, annual descaling keeps the heat exchanger efficient and prevents error-code shutdowns and premature failure." },
     ],
@@ -307,7 +307,7 @@ export const SERVICES: Service[] = [
     featured: true,
     intro: [
       "Gas work is not a place for shortcuts. Every gas line we touch is installed with approved materials, properly supported, protected where it passes through structure, fitted with sediment traps and shutoffs where required, and pressure tested and documented before we consider the job finished. If SoCalGas has red-tagged your service, we perform the repair and the test the utility needs to restore it.",
-      "our plumbers locate leaks with combustible gas detectors and pressure decay testing rather than soap and hope. That distinction matters: a pressure test proves the entire system holds, while a spot check only proves the fitting you happened to spray is not the one leaking today.",
+      "We pinpoint gas leaks with sensitive combustible gas detectors and precision pressure-decay testing. A full pressure test proves the entire system holds, while a spot check only confirms the single fitting you sprayed.",
       "Beyond repair, we run new gas lines for ranges, dryers, outdoor kitchens, fire pits, pool heaters, generators and tankless water heater conversions — sizing the pipe correctly for combined BTU demand and run length so every appliance actually gets the fuel it needs.",
     ],
     signs: [
@@ -319,7 +319,7 @@ export const SERVICES: Service[] = [
       "Headaches, dizziness or nausea that improve when you leave the property",
     ],
     process: [
-      { title: "Make it safe first", desc: "If gas is present our plumbers isolate the supply and ventilate before anything else happens." },
+      { title: "Make it safe first", desc: "If gas is detected, we immediately isolate the supply at the meter and ventilate the property before anything else." },
       { title: "Detect and locate", desc: "Combustible gas detection plus system pressure decay testing to find every leak, not just one." },
       { title: "Repair or replace", desc: "Damaged sections are replaced with approved black iron or CSST, properly supported and protected." },
       { title: "Pressure test", desc: "The system is tested and held at required pressure, with documentation for inspection or re-light." },
@@ -344,9 +344,9 @@ export const SERVICES: Service[] = [
     ],
     faqs: [
       { q: "I smell gas — what should I do right now?", a: "Leave the property. Do not flip switches, use a phone indoors or light anything. Once outside and at a safe distance, call the gas utility and then call us. If the smell is strong, call 911 first." },
-      { q: "Can you handle a red tag from the gas company?", a: "Yes. our plumbers repair the deficiency, pressure test the system and provide the documentation the utility requires to restore service." },
+      { q: "Can you handle a red tag from the gas company?", a: "Yes. We repair the code violation, pressure-test the entire piping system, and provide the official documentation the gas utility requires to restore service." },
       { q: "How long does a gas pressure test take?", a: "Most residential tests hold for a required period after the system is isolated. Plan on a couple of hours for a straightforward test including repair verification." },
-      { q: "Do I need a permit for a new gas line?", a: "New gas piping generally requires a permit and inspection. our plumbers install to code and coordinate the process so the work is properly documented." },
+      { q: "Do I need a permit for a new gas line?", a: "New gas piping generally requires a permit and inspection. We install all piping strictly to code and assist with necessary inspection documentation." },
     ],
   },
   {
@@ -360,8 +360,8 @@ export const SERVICES: Service[] = [
     featured: true,
     intro: [
       "Hidden leaks are quiet and expensive. A pinhole in a copper line under a slab can run for months, warping flooring, feeding mold behind baseboards and adding hundreds of dollars to water bills before anyone notices a warm spot on the floor. In slab-on-grade neighborhoods across Anaheim and North Orange County, this is one of the most common calls we take.",
-      "our plumbers locate leaks electronically. Acoustic ground microphones hear pressurized water escaping through concrete, thermal imaging reveals the temperature signature of a hot-side leak, tracer gas finds what sound cannot, and line tracing maps the pipe route so we know precisely which spot to open. The result is a small, targeted access point instead of a demolished floor.",
-      "Once located, our plumbers walk you through the honest options: [spot repair](/pipe-repair-{{locationSlug}}-ca) at the failure point, rerouting the affected line overhead to avoid future slab work, or a repipe when the system has reached the end of its service life. Documentation and photos are provided for insurance claims.",
+      "We locate hidden leaks non-destructively using electronic acoustic microphones, thermal imaging, and pipe line tracing. This allows us to map the pipe route and pinpoint the exact failure spot through concrete—resulting in minimal intrusion rather than ruined floors.",
+      "Once located, we walk you through practical options: [spot repair](/pipe-repair-{{locationSlug}}-ca) at the failure point, rerouting the affected line overhead through attics to avoid future under-slab work, or a repipe when piping is at the end of its lifespan. Clear photos and diagnostic reports are provided for insurance documentation.",
     ],
     signs: [
       "A water bill that jumped with no change in usage",
@@ -412,7 +412,7 @@ export const SERVICES: Service[] = [
     priceNote: "Section repairs and full repipes quoted flat-rate with drywall patch options.",
     intro: [
       "Southern California homes carry a mix of piping generations: galvanized steel from mid-century construction, copper from the 70s through the 90s, and PEX in newer builds and remodels. Each fails differently. Galvanized closes up with corrosion until pressure collapses; copper develops pinholes from water chemistry, high velocity and abrasion; poorly supported PEX fails at fittings.",
-      "our plumbers repair what should be repaired and replace what should be replaced. A single pinhole in otherwise healthy copper is a section [pipe repair](/pipe-repair-{{locationSlug}}-ca). Three pinholes in two years is a system telling you it is finished, and continuing to patch it is throwing money at drywall repair. our plumbers show you the removed pipe so the decision is based on evidence.",
+      "We repair what can be saved and replace only what has structurally failed. A single pinhole in healthy copper is a straightforward section [pipe repair](/pipe-repair-{{locationSlug}}-ca). Multiple recurrent pinholes signal systemic pipe failure. We always show you the removed pipe section so your repair decision is backed by physical evidence.",
       "Whole-home repipes are handled as a controlled project: pipe routing planned to minimize wall openings, water restored each night, fixtures protected, permits pulled where required, and neat drywall patching coordinated at completion. Most single-family repipes are completed in a matter of days, not weeks.",
     ],
     signs: [
@@ -500,7 +500,7 @@ export const SERVICES: Service[] = [
       "Verified results with post-repair footage",
     ],
     faqs: [
-      { q: "Do I always need the whole sewer replaced?", a: "No, and that is exactly why our plumbers camera first. Many failures are a single joint, a root mass or a short crushed section that a targeted spot repair solves at a fraction of the price." },
+      { q: "Do I always need the whole sewer replaced?", a: "No, which is exactly why we perform a video camera inspection first. Many failures involve a single offset joint or root obstruction that a targeted spot repair or lining solves at a fraction of the cost." },
       { q: "Who is responsible for the sewer lateral?", a: "In most Orange County cities the property owner is responsible from the building to the connection at the city main. We help identify where that boundary sits for your property." },
       { q: "How long does a sewer repair take?", a: "A spot repair is often a one-day job. A full lateral replacement typically takes a few days including inspection and site restoration." },
       { q: "Will my driveway be destroyed?", a: "Not necessarily. Precise locating lets us plan access points around hardscape wherever the pipe route allows, and we discuss every access decision with you before digging." },
@@ -516,8 +516,8 @@ export const SERVICES: Service[] = [
     priceNote: "Fixture supplied by you or by us — installation quoted flat-rate either way.",
     intro: [
       "A sink installation looks simple until the drain alignment fights the disposal, the supply stops are seized, the shutoffs weep, or the new faucet's deck plate does not cover the old three-hole cut. Doing it properly means correct trap geometry, new supply lines and angle stops, a clean silicone or clip seal at the counter, and a leak test that runs long enough to actually prove the joints.",
-      "our plumbers install everything from budget-friendly drop-in replacements to heavy fireclay farmhouse basins and undermount stainless in quartz, along with pull-down kitchen faucets, touchless models, filtered water taps, instant hot dispensers, garbage disposals and air switches.",
-      "If you are remodeling, our plumbers can rough in supply and drain locations to your new layout and return for final fixture setting. If you just need a leaking faucet swapped this week, that is an easy same-week appointment.",
+      "We install all residential kitchen and bathroom fixtures: undermount stainless, drop-in basins, farmhouse sinks, pull-down and touchless faucets, filtration taps, and commercial-grade garbage disposals.",
+      "If you are remodeling, our plumbers rough in supply and drain lines to your updated architectural layout and return for finish fixture trim. If you simply need a dripping faucet replaced, we provide same-week appointments.",
     ],
     signs: [
       "A faucet that drips or weeps at the base",
@@ -552,8 +552,8 @@ export const SERVICES: Service[] = [
       "Fast same-week scheduling",
     ],
     faqs: [
-      { q: "Can I buy my own sink and faucet?", a: "Absolutely. our plumbers install customer-supplied fixtures every day. our plumbers can also source quality fixtures for you if you would prefer one warranty covering everything." },
-      { q: "Will a new faucet fit my existing holes?", a: "our plumbers confirm hole count and spacing before removal. Where a new faucet has fewer holes, a deck plate or new basin resolves it — we flag this before you buy." },
+      { q: "Can I buy my own sink and faucet?", a: "Absolutely. We install customer-supplied fixtures regularly, or we can supply quality contractor-grade fixtures backed by a comprehensive warranty covering parts and labor." },
+      { q: "Will a new faucet fit my existing holes?", a: "We verify hole count and spread measurements before removing existing fixtures. If a new faucet has fewer holes, a deck plate or accessory covers it—we point this out in advance." },
       { q: "Do you install garbage disposals?", a: "Yes, including converting to a new mount type, adding an air switch, and correcting dishwasher drain connections that were installed without a proper high loop." },
       { q: "How long does an installation take?", a: "A straightforward faucet swap is often under an hour. A full sink and disposal replacement usually takes two to three hours including testing." },
     ],
@@ -570,7 +570,7 @@ export const SERVICES: Service[] = [
     intro: [
       "Most homeowners meet a plumber during a crisis. We would rather meet you before one. Residential plumbing done well is a relationship: a company that knows your home's age, pipe material, water pressure, water heater history and past repairs, and can tell you what needs attention now versus what can wait until next year.",
       "Our residential service covers everything inside and around a home: fixtures, faucets, toilets, disposals, water heaters, drains, sewer laterals, gas lines, pressure regulators, hose bibs, water softener connections and full repipes. Every technician is background checked, wears shoe covers, protects the workspace and cleans up completely.",
-      "Pricing is flat-rate and quoted before work begins, so the number you hear is the number you pay. And because we speak both English and Spanish, our plumbers can make sure every household member understands exactly what happened and what it costs.",
+      "Pricing is flat-rate and quoted in writing before work begins, so the number you approve is the exact number you pay. And because our team is fully bilingual in English and Spanish, we ensure every detail and cost is clearly understood.",
     ],
     signs: [
       "Running toilets or fixtures that drip constantly",
@@ -581,7 +581,7 @@ export const SERVICES: Service[] = [
       "Plumbing you have never had professionally inspected",
     ],
     process: [
-      { title: "Listen first", desc: "our plumbers start with what you are experiencing rather than assuming a diagnosis." },
+      { title: "Listen first", desc: "We start by listening to what you are experiencing rather than making premature assumptions." },
       { title: "Inspect properly", desc: "Pressure, shutoffs, water heater condition and visible piping are checked, not just the complaint." },
       { title: "Quote flat-rate", desc: "Written pricing before work begins, with options where options genuinely exist." },
       { title: "Repair cleanly", desc: "Shoe covers, drop cloths, and a fully cleaned workspace as standard." },
@@ -607,8 +607,8 @@ export const SERVICES: Service[] = [
     faqs: [
       { q: "Do you charge for estimates?", a: "Estimates on scheduled work are free. Diagnostic visits that require equipment such as cameras or leak detection carry a fee, which is credited toward the repair when you proceed with us." },
       { q: "Are you licensed and insured?", a: "Yes. We are a licensed and insured plumbing contractor serving Anaheim and Orange County, and we carry workmanship warranties on our repairs." },
-      { q: "Can you work around my schedule?", a: "our plumbers offer appointment windows including early mornings and weekends, and our plumbers call ahead before arriving." },
-      { q: "What if the same problem comes back?", a: "Warrantied repairs are covered. If something we repaired fails within the warranty period, our plumbers return and make it right." },
+      { q: "Can you work around my schedule?", a: "We offer convenient appointment windows including early mornings and weekends, and our technicians always call ahead before arriving at your home." },
+      { q: "What if the same problem comes back?", a: "All warrantied repairs are fully covered. If any repair completed by our technicians fails within the warranty period, we return promptly to make it right at no extra charge." },
     ],
   },
   {
@@ -621,8 +621,8 @@ export const SERVICES: Service[] = [
     priceNote: "Most common repairs completed in a single visit at a quoted flat rate.",
     intro: [
       "Not every plumbing problem is a catastrophe. Most are the ordinary wear items — a running toilet, a dripping shower valve, a failed angle stop, a garbage disposal that quit, a hose bib that will not close, a noisy pipe that has been annoying you for a year. Those are exactly the calls we handle every day, and handling them promptly is what prevents the big ones.",
-      "local repair trucks carry the parts that fix the overwhelming majority of residential plumbing faults, which means most jobs are done in one visit with no return trip and no second trip charge. Pricing is flat-rate and quoted before we begin.",
-      "our plumbers also use the visit to give you a free courtesy check: static water pressure, water heater age and condition, visible corrosion and shutoff function. It takes us a few extra minutes and regularly saves customers thousands by catching a failing regulator or a heater on borrowed time.",
+      "Our stocked service trucks carry the fittings, valves, and hardware to resolve the vast majority of residential plumbing faults on the first visit. You approve a clear, flat-rate price before any tool touches a pipe.",
+      "Every repair visit includes a free courtesy system health check: static water pressure testing, water heater assessment, visible supply pipe inspection, and shutoff function checks to prevent costly future surprises.",
     ],
     signs: [
       "A toilet that runs, rocks or refills on its own",
@@ -633,7 +633,7 @@ export const SERVICES: Service[] = [
       "Small persistent puddles under a sink",
     ],
     process: [
-      { title: "Quick diagnosis", desc: "our plumbers identify the failing component rather than replacing the whole assembly by default." },
+      { title: "Quick diagnosis", desc: "We identify the specific failing component and repair it whenever practical rather than defaulting to costly total replacement." },
       { title: "Flat-rate quote", desc: "You approve a fixed price before any work starts." },
       { title: "One-visit repair", desc: "Stocked trucks mean most repairs finish the same day." },
       { title: "Courtesy system check", desc: "Pressure, heater condition and shutoffs checked at no extra cost." },
@@ -660,7 +660,7 @@ export const SERVICES: Service[] = [
       { q: "Is there a minimum charge?", a: "Every visit has a service call rate that covers dispatch and diagnosis, and it is disclosed before we come out. The repair itself is quoted flat-rate for approval." },
       { q: "How soon can you come?", a: "Same-day and next-day appointments are usually available for non-emergency repairs, and 24/7 for emergencies." },
       { q: "Do small repairs carry a warranty?", a: "Yes. Our workmanship warranty applies to repairs of every size." },
-      { q: "Can you look at a few things while you're here?", a: "Please ask. Handling several small items in one visit is far cheaper than separate call-outs, and our plumbers quote each one before starting." },
+      { q: "Can you look at a few things while you're here?", a: "Please ask. Handling multiple fixture repairs during a single visit is much more cost-effective than separate service calls, and we quote each item clearly before starting." },
     ],
   },
 ];

@@ -5,7 +5,51 @@ import { POST_MAP } from "@/data/blog";
 import { SERVICE_MAP } from "@/data/services";
 
 export const Route = createFileRoute("/blog/$postSlug")({
-  head: ({ params }) => { const post = POST_MAP.get(params.postSlug); const title = post ? `${post.title} | Visoso Plumbing` : "Plumbing Guide Not Found | Visoso"; const description = post?.excerpt ?? "The requested plumbing guide could not be found."; return { meta: [{ title }, { name: "description", content: description }, { property: "og:title", content: title }, { property: "og:description", content: description }, { property: "og:type", content: "article" }, { name: "twitter:card", content: "summary_large_image" }] }; },
+  head: ({ params }) => {
+    const post = POST_MAP.get(params.postSlug);
+    const title = post ? `${post.title} | Visoso Plumbing` : "Plumbing Guide Not Found | Visoso";
+    const description = post?.excerpt ?? "The requested plumbing guide could not be found.";
+    return {
+      meta: [
+        { title },
+        { name: "description", content: description },
+        { property: "og:title", content: title },
+        { property: "og:description", content: description },
+        { property: "og:type", content: "article" },
+        { name: "twitter:card", content: "summary_large_image" },
+      ],
+      links: [
+        { rel: "canonical", href: `https://www.visosoplomeriaeconomica.com/blog/${params.postSlug}/` },
+      ],
+      scripts: post
+        ? [
+            {
+              type: "application/ld+json",
+              children: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                headline: post.title,
+                description: post.excerpt,
+                datePublished: "2026-09-27",
+                author: { "@type": "Organization", name: "Visoso Plumbing" },
+                publisher: {
+                  "@type": "Organization",
+                  name: "Visoso Plumbing",
+                  logo: {
+                    "@type": "ImageObject",
+                    url: "https://www.visosoplomeriaeconomica.com/favicon.png",
+                  },
+                },
+                mainEntityOfPage: {
+                  "@type": "WebPage",
+                  "@id": `https://www.visosoplomeriaeconomica.com/blog/${params.postSlug}/`,
+                },
+              }),
+            },
+          ]
+        : [],
+    };
+  },
   component: BlogArticle,
 });
 
@@ -20,10 +64,10 @@ function BlogArticle() {
     <div className="mt-12 rounded-2xl border border-white/20 bg-card/10 p-7 shadow-card">
       <Eyebrow>Related Local Services</Eyebrow>
       <ul className="mt-6 grid gap-3">
-        {post.relatedLinks.map(link => (
-          <li key={link.url}>
-            <a href={link.url} className="flex items-center justify-between rounded-xl border border-border bg-card p-4 font-bold shadow-card transition-transform hover:-translate-y-1">
-              <span>{link.label}</span>
+        {post.relatedLinks.map((link: { title: string; href: string }) => (
+          <li key={link.href}>
+            <a href={link.href} className="flex items-center justify-between rounded-xl border border-border bg-card p-4 font-bold shadow-card transition-transform hover:-translate-y-1">
+              <span>{link.title}</span>
               <ArrowLeft className="h-5 w-5 text-accent rotate-180" />
             </a>
           </li>
@@ -32,5 +76,16 @@ function BlogArticle() {
     </div>
   )}
 
-  {service && <div className="mt-12 rounded-2xl border border-border bg-card p-7 shadow-card"><h2 className="!mt-0">Need help with {service.name.toLowerCase()}?</h2><p>{service.short} Call Visoso Plumbing for a clear diagnosis and upfront estimate.</p><CallBtn label="Talk To A Plumber" /></div>}</article></Section><FinalCTA /></>;
+  {service && (
+    <div className="mt-12 rounded-2xl border border-border bg-card p-7 shadow-card">
+      <h2 className="!mt-0">Need help with {service.name.toLowerCase()}?</h2>
+      <p>{service.short} Call Visoso Plumbing for a clear diagnosis and upfront estimate.</p>
+      <div className="mt-6 flex flex-wrap gap-3">
+        <CallBtn label="Talk To A Plumber" />
+        <Link to="/$slug" params={{ slug: `${service.slug}-anaheim-ca` }} className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-3 text-sm font-bold hover:bg-secondary">
+          View {service.name} in Anaheim <ArrowLeft className="h-4 w-4 rotate-180" />
+        </Link>
+      </div>
+    </div>
+  )}</article></Section><FinalCTA /></>;
 }

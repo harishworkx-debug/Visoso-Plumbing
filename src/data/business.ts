@@ -1,7 +1,7 @@
 export const BUSINESS = {
   name: "Visoso Plumbing",
   altName: "Visoso Plomería Económica",
-  legalType: "Residential Plumbing Connection Service",
+  legalType: "Residential Plumbing Service",
   phoneDisplay: "(714) 750-8607",
   phoneHref: "tel:+17147508607",
   email: "service@visosoplomeriaeconomica.com",
@@ -14,6 +14,10 @@ export const BUSINESS = {
   lng: -117.9611,
   hours: "Open 24 Hours — 7 Days a Week",
   languages: ["English", "Spanish"],
+  rating: 4.5,
+  reviewCount: 21,
+  reviewPlatform: "Google",
+  googleMapsUrl: "https://www.google.com/maps?cid=10795797300438318700",
   mapEmbed:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425168.08625601436!2d-118.11073822900887!3d33.64094655343955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd292db591b5c5%3A0x95d2ed2d7f51ee6c!2sVisoso%20Plumbing!5e0!3m2!1sen!2sin!4v1785751938356!5m2!1sen!2sin",
 } as const;

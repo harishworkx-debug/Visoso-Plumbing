@@ -275,7 +275,7 @@ export function FinalCTA({
   );
 }
 
-export function FAQBlock({ faqs }: { faqs: { q: string; a: string }[] }) {
+export function FAQBlock({ faqs }: { faqs: { q: string; a: React.ReactNode }[] }) {
   const [open, setOpen] = useState<number | null>(0);
   return (
     <div className="grid gap-3">
@@ -310,7 +310,7 @@ export function Footer() {
           <span className="font-display text-xl font-extrabold">Visoso Plumbing</span>
           <p className="mt-1 text-sm opacity-70">Visoso Plomería Económica</p>
           <p className="mt-4 text-sm leading-relaxed opacity-80">
-            Visoso Plumbing is a local plumbing company serving Anaheim and surrounding Orange County communities. We provide fast, honest, and reliable residential plumbing services.
+            Visoso Plumbing is a mobile service-area plumbing company based in Anaheim, CA. We dispatch fully equipped service vehicles to residential homeowners across Anaheim, Orange, Santa Ana, Fullerton, Garden Grove, and surrounding Orange County communities.
           </p>
           <div className="mt-6 flex flex-wrap gap-2">
             <CallBtn label="Call Now" />
@@ -344,7 +344,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="text-sm font-bold uppercase tracking-[0.16em] opacity-70">Contact</h3>
+          <h3 className="text-sm font-bold uppercase tracking-[0.16em] opacity-70">Contact & Physical Base</h3>
           <ul className="mt-4 grid gap-3 text-sm opacity-85">
             <li>
               <a href={BUSINESS.phoneHref} className="font-bold">
@@ -371,7 +371,8 @@ export function Footer() {
           </ul>
         </div>
       </div>
-      <div className="container-page mt-12 border-t border-white/10 pt-8 text-xs opacity-60 grid gap-4">
+      <div className="container-page mt-12 border-t border-white/10 pt-8 text-xs opacity-60 grid gap-2">
+        <p><strong>Service-Area Transparency:</strong> Visoso Plumbing operates as an on-site mobile plumbing service headquartered at {BUSINESS.street}, {BUSINESS.city}, {BUSINESS.state} {BUSINESS.zip}. We dispatch fully equipped rolling repair trucks to homeowners across our defined Orange County service areas. We do not maintain separate retail walk-in offices in each serviced city.</p>
         <p>© {new Date().getFullYear()} Visoso Plumbing · Visoso Plomería Económica · Anaheim, CA. All rights reserved.</p>
       </div>
     </footer>

@@ -11,13 +11,19 @@ import { REVIEWS } from "@/data/reviews";
 import { ReviewCard } from "@/components/blocks";
 
 export const Route = createFileRoute("/")({
-  head: () => ({ meta: [
-    { title: "Visoso Plumbing | 24/7 Plumber Anaheim CA" },
-    { name: "description", content: "Licensed 24/7 plumber in Anaheim for drains, leaks, water heaters, sewer and emergency repairs. Call Visoso Plumbing for a free estimate." },
-    { property: "og:title", content: "Visoso Plumbing | 24/7 Plumber Anaheim CA" },
-    { property: "og:description", content: "Fast, honest plumbing service in Anaheim and Orange County. English and Spanish service, 24 hours a day." },
-    { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" },
-  ] }),
+  head: () => ({
+    meta: [
+      { title: "Plumber in Anaheim, CA | Visoso Plumbing" },
+      { name: "description", content: "24/7 residential plumber in Anaheim, CA for emergency repairs, drain cleaning, water heaters and leak detection. Upfront pricing from Visoso Plumbing." },
+      { property: "og:title", content: "Plumber in Anaheim, CA | Visoso Plumbing" },
+      { property: "og:description", content: "24/7 residential plumber in Anaheim, CA. Upfront flat-rate pricing, bilingual technicians, and guaranteed workmanship." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://www.visosoplomeriaeconomica.com/" },
+    ],
+  }),
   component: HomePage,
 });
 
@@ -36,7 +42,7 @@ function HomePage() {
     <Section className="!py-10"><TrustBar /></Section>
     <Section className="bg-surface"><div className="mx-auto max-w-3xl text-center"><Eyebrow>Complete Plumbing Care</Eyebrow><h2 className="mt-5 text-3xl font-extrabold md:text-5xl">One Local Team For Every Plumbing Problem</h2><p className="mt-4 text-muted-foreground">From a dripping faucet to a failed sewer line, our stocked trucks and experienced technicians are prepared to diagnose the cause and complete a lasting repair.</p></div><div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">{FEATURED_SERVICES.slice(0, 6).map(service => <ServiceCard key={service.slug} service={service} />)}</div><div className="mt-10 text-center"><Link to="/services" className="inline-flex items-center gap-2 font-bold text-primary">View all plumbing services <ArrowRight className="h-4 w-4" /></Link></div></Section>
     <Section><div className="grid items-center gap-12 lg:grid-cols-2"><Reveal><img src={teamImage} alt="Visoso Plumbing team ready for an Anaheim service call" width={1400} height={900} loading="lazy" className="aspect-[4/3] w-full rounded-3xl object-cover shadow-lift" /></Reveal><Reveal delay={0.08}><Eyebrow>Why Anaheim Calls Visoso</Eyebrow><h2 className="mt-5 text-3xl font-extrabold md:text-5xl">Straight Answers. Careful Work. No Surprise Bill.</h2><p className="mt-5 leading-relaxed text-muted-foreground">Our plumbers arrive within a realistic service window, protect your floors and finishes, show you what failed, and quote the work before touching the system.</p><p className="mt-4 leading-relaxed text-muted-foreground">Our team based in Anaheim understands local housing: aging galvanized pipe, slab leaks, root intrusion and hard-water scale.</p><ul className="mt-7 grid gap-3 sm:grid-cols-2">{["Upfront flat-rate pricing", "24/7 live emergency response", "English and Spanish service", "Clean, stocked service trucks", "Residential plumbing", "We warranty workmanship"].map(item => <li key={item} className="flex items-center gap-2 text-sm font-semibold"><CheckCircle2 className="h-5 w-5 text-accent" />{item}</li>)}</ul><div className="mt-8"><CallBtn label="Schedule A Plumber" /></div></Reveal></div></Section>
-    <Section className="surface-ink"><StatGrid items={[{ value: "24/7", label: "Emergency Availability" }, { value: "4.5★", label: "Based on 21 Reviews" }, { value: "10+", label: "Orange County Areas" }, { value: "2", label: "Languages Spoken" }]} /></Section>
+    <Section className="surface-ink"><StatGrid items={[{ value: "24/7", label: "Emergency Availability" }, { value: `${BUSINESS.rating}★`, label: `Google Rating (${BUSINESS.reviewCount} Reviews)` }, { value: "10+", label: "Orange County Areas" }, { value: "2", label: "Languages Spoken" }]} /></Section>
     <Section><div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]"><div><Eyebrow>How Service Works</Eyebrow><h2 className="mt-5 text-3xl font-extrabold md:text-4xl">From First Call To Final Test</h2><p className="mt-4 text-muted-foreground">Our process is built around accurate diagnosis, informed approval and verified results.</p></div><div className="grid gap-4 sm:grid-cols-2">{[
       { icon: PhoneCall, title: "Tell us what happened", body: "Call us with the issue. We triage the issue and give you a real arrival window." },
       { icon: Wrench, title: "We diagnose the cause", body: "A licensed technician tests the system instead of guessing from symptoms." },
@@ -47,9 +53,19 @@ function HomePage() {
     <Section><div className="grid gap-12 lg:grid-cols-2"><div><Eyebrow>Common Questions</Eyebrow><h2 className="mt-5 text-3xl font-extrabold md:text-4xl">Plumbing Help, Without The Runaround</h2><p className="mt-4 text-muted-foreground">Call any time. A real person will help you decide what needs immediate attention.</p></div><FAQBlock faqs={homeFaqs} /></div></Section>
     <Section className="bg-surface overflow-hidden">
       <div className="mx-auto max-w-3xl text-center mb-10">
-        <Eyebrow>Real Customer Reviews</Eyebrow>
+        <Eyebrow>Verified Google Reviews</Eyebrow>
         <h2 className="mt-5 text-3xl font-extrabold md:text-5xl">Hear From Our Community</h2>
-        <p className="mt-4 text-muted-foreground">We value all feedback and strive to provide honest, reliable service to every home.</p>
+        <p className="mt-4 text-muted-foreground">Rated {BUSINESS.rating}★ out of 5 based on {BUSINESS.reviewCount} verified customer reviews on Google.</p>
+        <div className="mt-4">
+          <a
+            href={BUSINESS.googleMapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-xs font-bold text-primary hover:bg-card hover:border-primary transition-colors"
+          >
+            Read all reviews on Google Maps <ArrowRight className="h-3.5 w-3.5" />
+          </a>
+        </div>
       </div>
       <div className="flex gap-4 overflow-x-auto pb-8 snap-x" style={{ scrollbarWidth: 'none' }}>
         {REVIEWS.map((review, idx) => (

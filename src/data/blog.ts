@@ -9,6 +9,7 @@ export interface BlogPost {
   sections: { h: string; p: string[] }[];
   takeaways: string[];
   relatedService: string;
+  relatedLinks?: Array<{ title: string; href: string }>;
 }
 
 const d = (n: number) => new Date(Date.UTC(2026, 0, 5 + n * 9)).toISOString().slice(0, 10);
@@ -42,7 +43,7 @@ export const POSTS: BlogPost[] = [
         h: "Bathroom habits that matter most",
         p: [
           "Hair is the dominant cause of bathroom clogs, and a five-dollar hair catcher eliminates most of it. Clean it weekly rather than waiting until the shower pan holds water.",
-          "Only three things belong in a toilet. Wipes labelled flushable do not break down at the speed a sewer lateral requires, and they are the single most common cause of the main line backups providers clear in older Orange County neighbourhoods.",
+          "Only three things belong in a toilet. Wipes labelled flushable do not break down at the speed a sewer lateral requires, and they are the single most common cause of the main line backups we clear in older Orange County neighborhoods.",
         ],
       },
       {
@@ -497,7 +498,7 @@ export const POSTS: BlogPost[] = [
         h: "Who should stay with a tank",
         p: [
           "Small households with modest simultaneous demand, homes where gas upsizing would be disproportionately expensive, and anyone replacing on short notice with a tight budget are often better served by a quality tank plus a recirculation upgrade.",
-          "There is no universally correct answer, only the right answer for your household's demand curve and your building's constraints. providers quote both so you can compare real numbers.",
+          "There is no universally correct answer, only the right answer for your household's demand curve and your building's constraints. We quote both options so you can compare real numbers.",
         ],
       },
     ],
@@ -576,7 +577,7 @@ export const POSTS: BlogPost[] = [
         h: "Deciding what to do",
         p: [
           "The camera decides. If one joint has intrusion and the rest of the run is sound, spot repair. If multiple joints show intrusion and the pipe is deteriorating, replacement stops the annual cycle.",
-          "providers present both options with the footage in front of you, including the honest math on how many years of annual cutting equals one replacement.",
+          "Our plumbers present both options with the camera footage in front of you, including the honest math on how many years of annual cutting equals one replacement.",
         ],
       },
     ],
@@ -684,10 +685,10 @@ export const POSTS: BlogPost[] = [
         ],
       },
       {
-        h: "What providers look at",
+        h: "What our plumbers inspect",
         p: [
           "Pipe material and age, static pressure, visible corrosion, water quality, the leak history and the condition of removed pipe sections. Cut-open pipe is remarkably informative: wall thickness tells you how much life is genuinely left.",
-          "providers show you those sections. Evidence beats opinion.",
+          "We show you those sections. Evidence beats opinion.",
         ],
       },
       {

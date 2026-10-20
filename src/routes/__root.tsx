@@ -145,8 +145,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           description: `${BUSINESS.name} is a local plumbing company serving Anaheim and surrounding Orange County communities, providing fast, honest, and reliable residential plumbing services.`,
           aggregateRating: {
             "@type": "AggregateRating",
-            ratingValue: BUSINESS.rating,
-            reviewCount: BUSINESS.reviewCount,
+            ratingValue: String(BUSINESS.rating),
+            reviewCount: String(BUSINESS.reviewCount),
+            bestRating: "5",
+            worstRating: "1",
           },
         }),
       },

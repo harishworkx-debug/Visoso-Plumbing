@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 import { ArrowRight, CheckCircle2, Star } from "lucide-react";
 import type { Service } from "@/data/services";
 import { Reveal } from "@/components/site";
+import { BUSINESS } from "@/data/business";
 
 export function PageHero({
   eyebrow,
@@ -37,9 +38,15 @@ export function PageHero({
           <p className="mt-5 max-w-xl text-base leading-relaxed opacity-85 md:text-lg">{sub}</p>
           <div className="mt-8 flex flex-wrap gap-3">{children}</div>
           <div className="mt-8 flex flex-wrap items-center gap-5 text-xs opacity-80">
-            <span className="flex items-center gap-1.5">
-              <Star className="h-4 w-4 fill-accent text-accent" /> 4.5★ based on 21 reviews
-            </span>
+            <a
+              href={BUSINESS.googleMapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 transition-colors hover:text-accent hover:underline"
+              title="View Visoso Plumbing verified reviews on Google"
+            >
+              <Star className="h-4 w-4 fill-accent text-accent" /> {BUSINESS.rating}★ on Google ({BUSINESS.reviewCount} reviews)
+            </a>
             <span className="flex items-center gap-1.5">
               <CheckCircle2 className="h-4 w-4 text-accent" /> Licensed &amp; insured
             </span>
@@ -129,6 +136,12 @@ export function ReviewCard({ review }: { review: import("@/data/reviews").Review
       <p className="flex-1 text-sm leading-relaxed text-muted-foreground mb-4">
         {review.text ? `"${review.text}"` : ""}
       </p>
+      {review.ownerResponse && (
+        <div className="mb-4 rounded-xl border border-border bg-surface/75 p-3 text-xs leading-relaxed">
+          <p className="font-bold text-accent mb-1">Owner Response</p>
+          <p className="text-muted-foreground">{review.ownerResponse}</p>
+        </div>
+      )}
       <div>
         <p className="font-bold text-sm">{review.name}</p>
         <p className="text-xs text-muted-foreground">{review.time}</p>

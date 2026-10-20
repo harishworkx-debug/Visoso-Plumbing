@@ -1,3 +1,18 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { AreasPage } from "@/components/content-pages";
-export const Route = createFileRoute("/service-areas")({ head: () => ({ meta: [{ title: "Orange County Plumbing Service Areas | Visoso" }, { name: "description", content: "Local plumbing service in Anaheim, Orange, Santa Ana, Fullerton, Garden Grove, Buena Park, Placentia and Yorba Linda." }, { property: "og:title", content: "Orange County Plumbing Service Areas | Visoso" }, { property: "og:description", content: "Fast local plumbing service throughout north and central Orange County." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: AreasPage });
+export const Route = createFileRoute("/service-areas")({
+  head: () => ({
+    meta: [
+      { title: "Orange County Plumbing Service Areas | Visoso" },
+      { name: "description", content: "Local plumbing service in Anaheim, Orange, Santa Ana, Fullerton, Garden Grove, Buena Park, Placentia and Yorba Linda." },
+      { property: "og:title", content: "Orange County Plumbing Service Areas | Visoso" },
+      { property: "og:description", content: "Fast local plumbing service throughout north and central Orange County." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://www.visosoplomeriaeconomica.com/service-areas/" },
+    ],
+  }),
+  component: AreasPage,
+});

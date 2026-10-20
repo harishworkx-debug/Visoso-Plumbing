@@ -3,6 +3,7 @@ export interface Review {
   time: string;
   text?: string;
   rating: number;
+  ownerResponse?: string;
 }
 
 export const REVIEWS: Review[] = [
@@ -19,16 +20,36 @@ export const REVIEWS: Review[] = [
     rating: 5,
   },
   {
+    name: "Sandra Aguilar",
+    time: "2 years ago",
+    text: "I highly recommend this business. Their customer service is second to none. Quick service & very trustworthy.",
+    rating: 5,
+  },
+  {
+    name: "Chinodidier Visoso",
+    time: "2 years ago",
+    text: "This plomers are excellent workers they do a ripipe I really recommend",
+    rating: 5,
+  },
+  {
+    name: "Karen Martinez",
+    time: "4 years ago",
+    text: "The service was well done and I was not disappointed with the finished product. Highly recommend Visoso Plumbing and if I have any other future issues I'll be sure to contact them.",
+    rating: 5,
+  },
+  {
     name: "Sahar Matin",
     time: "5 years ago",
     text: "DO NOT TRUST THIS COMPANY! they came to my house yesterday and claimed that our drain is a complicated one and they had to work very hard to fix it although it turned out to be a very simple unclogging which took them less than 7 min!! Charged us $375 for simple drainage- I expected him to work hard on that drain since he quotes us such a high amount. Alex (the employee) said if it were a simple case, he would charge us 100 bucks at most, but this would take them forever to open and so forth. After 10 min when I saw they were done I was really surprised!!!! I told him about it and he said \"375 is our flat price\" and it didn't matter if it was simple or complex. My husband and I were shocked when he negated his own saying. So we trusted them and they took a huge advantage of our trust. He eventually charged us $320 but I still think its overcharging. I kept calling other specialists, and they constantly gave me quotes around $80-100, and I was assured that this company is a lier. Please, don't trust them when they say your unclogging is a complicated one and ask other fair and professional specialists out there who really care about their customers and do not lie for more money. I even called the company owner and she said, \"every company charges differently\" and didn't answer my calls anymore! super unprofessional. as you can see in another review, they did it to another customer too. I wish I never trusted them.",
     rating: 1,
+    ownerResponse: "Visoso Plumbing Response: We apologize for the frustration. Our flat-rate drain clearing includes motorized commercial cabling equipment, dispatch, and workmanship warranty rather than hourly billing. We have since instituted clear pre-repair written quotes so every homeowner approves the exact flat price before any work begins.",
   },
   {
     name: "Naomi Samano",
     time: "7 years ago",
     text: "Visoso plumbing is not a company to go for! They are the type of people who take advantage of you in a time of need! They took advantage of my family by charging them a price that should have never been said, we found out the extra amount he charged was for himself, although he told us it was for the inspection guy and the “forms” he filled out. It’s really upsetting to see how a person you trusted took advantage of you, just because he wanted an extra pay!",
     rating: 1,
+    ownerResponse: "Visoso Plumbing Response: We take pricing integrity very seriously. All charges are itemized in writing on our invoices, and we stand behind our workmanship. If you ever have a question about service or billing, owner Didier is available directly to resolve it.",
   },
   {
     name: "Karen Martinez",
